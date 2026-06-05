@@ -1,0 +1,16 @@
+NOTICE
+
+This repository contains research artifacts derived from Google's Gemma model
+(google/gemma-3-4b-pt, revision cc012e0): residual-stream activations, derived
+result tables, and figures.
+
+No Gemma model weights are included in this repository. To reproduce the runs,
+obtain Gemma separately (for example from Hugging Face) and use it under and
+subject to the Gemma Terms of Use: https://ai.google.dev/gemma/terms
+
+Gemma is a trademark of Google LLC. Google does not claim ownership of model
+outputs; use of Gemma and any Gemma derivatives remains governed by the Gemma
+Terms of Use.
+
+The repository's own source code and documentation are licensed under the MIT
+License (see LICENSE).

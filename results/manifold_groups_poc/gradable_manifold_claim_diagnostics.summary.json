@@ -1,0 +1,32 @@
+{
+  "activations_npz": "results/manifold_groups_poc/gradable_size_geometry_broad_final_token_gemma3.npz",
+  "forward_patch_csv": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3.csv",
+  "layers": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    33
+  ],
+  "metadata_csv": "results/manifold_groups_poc/gradable_size_geometry_broad_final_token_gemma3.metadata.csv",
+  "n_projection_rows": 84,
+  "n_transfer_rows": 216,
+  "projection_layer": 20,
+  "projection_summary": {
+    "explained_variance": [
+      0.829750838972663,
+      0.04587586316823068,
+      0.025960387206504253
+    ],
+    "layer": 20,
+    "pc1_rho_r": -0.04867543349254475,
+    "pc2_rho_r": 0.8416759512688787,
+    "pc3_rho_r": 0.15597708758712123,
+    "rank": 3
+  },
+  "rank": 5,
+  "reverse_patch_csv": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_iso_ratio_adjective_counts_eval_fictional_semantic_adjective_counts_l162024_gemma3.csv"
+}

@@ -1,0 +1,44 @@
+{
+  "allow_source_reuse": false,
+  "match_mode": "domain_z",
+  "max_abs_match_error": null,
+  "min_unique_source_pairs": 20,
+  "n_rows": 92,
+  "n_size_directed": 46,
+  "n_size_pairs": 23,
+  "run": {
+    "git_commit": "f4161a7d14476552ec9a074a5471ff1f1ec82cda",
+    "started_at_utc": "2026-05-27T14:53:39.154578+00:00",
+    "wall_time_sec": 0.04182104207575321
+  },
+  "schema_version": "gradable_cross_domain_delta_rho_controls_v1",
+  "size_data_path": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_iso_ratio_adjective_counts.jsonl",
+  "source_specs": {
+    "age": "results/manifold_groups_poc/gradable_age_disamb_pairs_v1_2.jsonl",
+    "temperature": "results/manifold_groups_poc/gradable_temperature_disamb_pairs_v1_2.jsonl"
+  },
+  "source_summaries": {
+    "age": {
+      "max_abs_match_error_observed": 0.20894600702526478,
+      "mean_abs_match_error": 0.09131565889638414,
+      "n_matches": 46,
+      "n_source_directed": 144,
+      "n_source_pairs": 72,
+      "n_unique_size_pairs": 23,
+      "n_unique_source_pairs": 23,
+      "passes_min_unique_source_pairs": true,
+      "source_data_path": "results/manifold_groups_poc/gradable_age_disamb_pairs_v1_2.jsonl"
+    },
+    "temperature": {
+      "max_abs_match_error_observed": 0.09772931959856024,
+      "mean_abs_match_error": 0.04124608270317232,
+      "n_matches": 46,
+      "n_source_directed": 168,
+      "n_source_pairs": 84,
+      "n_unique_size_pairs": 23,
+      "n_unique_source_pairs": 23,
+      "passes_min_unique_source_pairs": true,
+      "source_data_path": "results/manifold_groups_poc/gradable_temperature_disamb_pairs_v1_2.jsonl"
+    }
+  }
+}

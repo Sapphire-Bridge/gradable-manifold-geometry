@@ -1,0 +1,3440 @@
+{
+  "groups": {
+    "L16_delta_mean_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.036526301298055,
+        "lo": -0.01862538437928957,
+        "mean": 0.00861743848187252,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5411764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.02881520818677992,
+        "lo": -0.07501003877976646,
+        "mean": -0.022125487121229668,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "delta_mean",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.18319813017253797,
+        "lo": -0.15670778752263134,
+        "mean": 0.002262077798481691,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.10190468829846565,
+        "lo": -0.06409002586745312,
+        "mean": 0.019527588723152908,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.005645765164110373,
+      "projected_norm_fraction": {
+        "hi": 0.3708327893367668,
+        "lo": 0.30658384076461365,
+        "mean": 0.3385279680146663,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.37517832746540375,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.47305970806924436,
+        "lo": -2.639355272197094,
+        "mean": -0.7347691569619518,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.2782003556155356,
+        "lo": -2.942482032695746,
+        "mean": -0.866481375001366,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.009591517751658164
+    },
+    "L16_full_rank2560_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.12258070915603375,
+        "lo": 0.07572372194065886,
+        "mean": 0.09890821716219683,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7058823529411765,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.19527582072567468,
+        "lo": -0.2758741686709656,
+        "mean": -0.23580642642105734,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "full",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.20506383973696063,
+        "lo": 0.06931550723061523,
+        "mean": 0.14194473788659429,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.24141416813345407,
+        "lo": 0.13506816022745707,
+        "mean": 0.18860511118374204,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.25614815627287424,
+      "projected_norm_fraction": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 1.0,
+      "rank": 2560,
+      "recovery_vs_full": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 1.0
+    },
+    "L16_ordered_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.025170822712151077,
+        "lo": 0.011160216547075014,
+        "mean": 0.018195303618847185,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7176470588235294,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.037735221292903215,
+        "lo": -0.06611025942936513,
+        "mean": -0.051559057693665686,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "ordered_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.06969131437848022,
+        "lo": -0.04974207619286636,
+        "mean": 0.011273297715186226,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.06445238666380249,
+        "lo": 0.019121433112047982,
+        "mean": 0.04276083540571369,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.04190358031085023,
+      "projected_norm_fraction": {
+        "hi": 0.13923196777766278,
+        "lo": 0.10143250123769176,
+        "mean": 0.12040347902733485,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.11004317386298494,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.2833358390702854,
+        "lo": -0.5409074348799332,
+        "mean": -0.051591826171460964,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.21001287660823584,
+        "lo": -0.5920744016042405,
+        "mean": -0.06941930031422816,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.20544073349662392
+    },
+    "L16_pca_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.003804865942988595,
+        "lo": -0.0032078862093921487,
+        "mean": 0.00047297365475612,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5647058823529412,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.008850598906804204,
+        "lo": -0.004576447285181003,
+        "mean": 0.0018157852953064513,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.03415666321256488,
+        "lo": -0.04333195830350484,
+        "mean": -0.006020987691471008,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.01507680961405598,
+        "lo": -0.008910860565155786,
+        "mean": 0.0038962881399473045,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0020174102892427225,
+      "projected_norm_fraction": {
+        "hi": 0.7628103715426496,
+        "lo": 0.6557653253186871,
+        "mean": 0.7100004516189022,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.7910406965858121,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.06362477348773278,
+        "lo": -0.5739633610948663,
+        "mean": -0.2017664050253588,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.01763620845398242,
+        "lo": -0.4556342720691512,
+        "mean": -0.15175568274491602,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": -0.0038014142082712205
+    },
+    "L16_pca_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.03671345823979924,
+        "lo": 0.01964734222083534,
+        "mean": 0.02811324285799078,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.8294117647058824,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.04483226049381749,
+        "lo": -0.08123892537268193,
+        "mean": -0.06239526338397976,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.10451060051514141,
+        "lo": -0.014817149381784635,
+        "mean": 0.04517834410962392,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.09206928613588333,
+        "lo": 0.04223606540479628,
+        "mean": 0.06784614270295826,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0564114246007474,
+      "projected_norm_fraction": {
+        "hi": 0.8079152596830662,
+        "lo": 0.7448704451688511,
+        "mean": 0.7751608536460546,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.8219190370016748,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.29633600191610965,
+        "lo": -1.1337580806794771,
+        "mean": -0.2760378924069791,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.26459431552494056,
+        "lo": -0.9850890911010916,
+        "mean": -0.197960148692265,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.23677804083079684
+    },
+    "L16_pca_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.05641572585057173,
+        "lo": 0.035919407658346496,
+        "mean": 0.04596884008265113,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7470588235294118,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.08905919447810086,
+        "lo": -0.1290672290920532,
+        "mean": -0.10773249788578446,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.10938263086249929,
+        "lo": 0.01767873571139068,
+        "mean": 0.06706127032082412,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.12176958628398224,
+        "lo": 0.069707819007721,
+        "mean": 0.09802616003115731,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.10581960612763469,
+      "projected_norm_fraction": {
+        "hi": 0.8285306320990841,
+        "lo": 0.7718612064523861,
+        "mean": 0.8007390150732724,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.8491330009285628,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.5289073265449613,
+        "lo": -0.15670681365943984,
+        "mean": 0.23818212335652203,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.49785896923018386,
+        "lo": -0.005321927194578179,
+        "mean": 0.3158612026519665,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.41601351475992554
+    },
+    "L16_random_norm_matched_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.012119673007722457,
+        "lo": -0.0010181734150151978,
+        "mean": 0.005397485030173229,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.47794117647058826,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0037943470330363215,
+        "lo": -0.02399081520552842,
+        "mean": -0.009660758663637525,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.06222151243568824,
+        "lo": -0.017467661626702366,
+        "mean": 0.016968666497667338,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.015379132509206778,
+        "lo": -0.016446920256744203,
+        "mean": 1.0534022401849655e-05,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -0.004600875061407005,
+      "projected_norm_fraction": {
+        "hi": 0.7762268683038167,
+        "lo": 0.691429807435424,
+        "mean": 0.73305563192315,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.7910406965858121,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 1.1124348545220413,
+        "lo": 0.04508693491691061,
+        "mean": 0.48976553851338306,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.8298388139502797,
+        "lo": 0.04384101826129541,
+        "mean": 0.3208233736149367,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.011914237524023069
+    },
+    "L16_random_norm_matched_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.015047051334751017,
+        "lo": 0.0018898815993103172,
+        "mean": 0.008029808937171352,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.4814705882352941,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.003701794730634597,
+        "lo": -0.017734399447394977,
+        "mean": -0.0067262075640150115,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.027049364559716203,
+        "lo": -0.02281901686629273,
+        "mean": 0.002308283904522391,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.021157939977787876,
+        "lo": -0.007833833759308982,
+        "mean": 0.00649028977876666,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -0.0050712698919288335,
+      "projected_norm_fraction": {
+        "hi": 0.8079152596830929,
+        "lo": 0.7448704451688589,
+        "mean": 0.7751608536460715,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.8219190370016748,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 1.6943917409043934,
+        "lo": 0.10119974526016463,
+        "mean": 0.7822257529737163,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 1.2385217938224475,
+        "lo": 0.06411108419323981,
+        "mean": 0.4897979655375225,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.018181691603443732
+    },
+    "L16_random_norm_matched_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.014390595972930647,
+        "lo": -0.0002423675584543076,
+        "mean": 0.006762232804456297,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5202941176470588,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.009097427981394186,
+        "lo": -0.0334665118361451,
+        "mean": -0.020917692359542047,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.020657100591470714,
+        "lo": -0.023705059955270873,
+        "mean": -0.0018866312871722588,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.014766042072631281,
+        "lo": -0.02477067079813603,
+        "mean": -0.0023906539191003665,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.006678472094982612,
+      "projected_norm_fraction": {
+        "hi": 0.8285306320990827,
+        "lo": 0.7718612064523794,
+        "mean": 0.8007390150732664,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.8491330009285628,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 1.2619888240170012,
+        "lo": 0.14719622950164568,
+        "mean": 0.5990226579780774,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.7220020979438067,
+        "lo": 0.13800501253182257,
+        "mean": 0.3659742004492489,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.06665528915328114
+    },
+    "L16_random_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0003192699499573167,
+        "lo": 0.00011943877302382689,
+        "mean": 0.0002164908211228007,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5129411764705882,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 4.080294896552556e-05,
+        "lo": -0.0004047364818532107,
+        "mean": -0.00018740243487547833,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0012366229475154655,
+        "lo": -0.0006330201027018711,
+        "mean": 0.00027737998219548387,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.001053851798488892,
+        "lo": 0.00031908066532515924,
+        "mean": 0.0006498341536501634,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 2.4447906778017445e-05,
+      "projected_norm_fraction": {
+        "hi": 0.018472500708738432,
+        "lo": 0.017819003754783153,
+        "mean": 0.01814858125728591,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.01628625375204267,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.0032983829924106917,
+        "lo": -0.005719824663686011,
+        "mean": -0.0005415279233365055,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.001793783715848475,
+        "lo": -0.004168717088700832,
+        "mean": -0.0005976051765713188,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 1.9679314064204635e-05
+    },
+    "L16_random_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 8.576377630793991e-05,
+        "lo": -0.00010312136014937108,
+        "mean": -8.925875133279849e-06,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.49117647058823527,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.00019489521838038132,
+        "lo": -0.0002430230000065393,
+        "mean": -2.0946978366983144e-05,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0011830722243908196,
+        "lo": 7.049645757440355e-05,
+        "mean": 0.0005771578130807422,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.00024043231075131572,
+        "lo": -0.0003632509420686015,
+        "mean": -3.525988667555058e-05,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -5.1779400651882974e-05,
+      "projected_norm_fraction": {
+        "hi": 0.020360424868893993,
+        "lo": 0.01961033835521153,
+        "mean": 0.019997038269070563,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.019352775611211168,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": -0.0007513544752443079,
+        "lo": -0.006034042530002516,
+        "mean": -0.0031141920331892413,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.00031381641933236594,
+        "lo": -0.004462492043513292,
+        "mean": -0.001849174897357705,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": -0.00024540534323756963
+    },
+    "L16_random_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.00012237915304775046,
+        "lo": -0.0002525173469339534,
+        "mean": -5.573941289049383e-05,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.4973529411764706,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.00011536241783748996,
+        "lo": -0.0007939997495101163,
+        "mean": -0.0003337951851945962,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0014045569161767633,
+        "lo": -0.0012601682514469937,
+        "mean": 1.9330416741839384e-05,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.00015051561861174445,
+        "lo": -0.000979113525913049,
+        "mean": -0.00039715045811260826,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -4.8700546364220106e-05,
+      "projected_norm_fraction": {
+        "hi": 0.04109628533021762,
+        "lo": 0.040261965363135914,
+        "mean": 0.04067409461028495,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.03962317883797675,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.004874590829712424,
+        "lo": -0.005099136336715357,
+        "mean": -0.0003819730505660074,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.00389642829415549,
+        "lo": -0.0025247483263810162,
+        "mean": 0.0006040580855902523,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0011484276475543474
+    },
+    "L16_rho_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.005826852945654366,
+        "lo": 0.004121087975291741,
+        "mean": 0.004964794997602816,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7176470588235294,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.006301947487685589,
+        "lo": -0.010712672219106543,
+        "mean": -0.008461247104127939,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "rho",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.020069219848260024,
+        "lo": 0.010814912104180742,
+        "mean": 0.015232495076610734,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.014855010583200826,
+        "lo": 0.009910787461631586,
+        "mean": 0.012416189597136964,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.005982076989618721,
+      "projected_norm_fraction": {
+        "hi": 0.1275393590359667,
+        "lo": 0.09333814097148299,
+        "mean": 0.1107780561191088,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.08076189581098075,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.028938501791726606,
+        "lo": -0.03787714600178145,
+        "mean": -0.0005040883208886601,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.03328729979311884,
+        "lo": -0.016920436012967534,
+        "mean": 0.01351916771829879,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.010588953489509514
+    },
+    "L16_sham_rank0_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.0,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "sham",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0,
+      "projected_norm_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0,
+      "rank": 0,
+      "recovery_vs_full": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0
+    },
+    "L16_signed_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0251774338878841,
+        "lo": 0.011083876455367353,
+        "mean": 0.01814098075242408,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7176470588235294,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.03832666604320758,
+        "lo": -0.06704391598272041,
+        "mean": -0.0523274169739456,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "signed_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.06753232887836805,
+        "lo": -0.05141936812047312,
+        "mean": 0.009458186337770711,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.06364346411152369,
+        "lo": 0.018208593802947915,
+        "mean": 0.04208744591044537,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.04209138759025878,
+      "projected_norm_fraction": {
+        "hi": 0.13861994063370106,
+        "lo": 0.10109468055758347,
+        "mean": 0.11985033301882993,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.11047243572155266,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.2871241872588708,
+        "lo": -0.51517668510034,
+        "mean": -0.038572835878473766,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.21329213563441893,
+        "lo": -0.5673945689637295,
+        "mean": -0.05892847502750969,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.20038675353875407
+    },
+    "L16_standard_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": -0.001021776057257519,
+        "lo": -0.0017729676561370831,
+        "mean": -0.0014156664346377744,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.3941176470588235,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0015742190875171888,
+        "lo": -2.89103299775019e-05,
+        "mean": 0.0007623619365511462,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "standard",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": -0.0030678652232691513,
+        "lo": -0.013864682639510947,
+        "mean": -0.008172444615606329,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": -0.003355588000622378,
+        "lo": -0.006654516178504779,
+        "mean": -0.004996087621048577,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -0.005213590829878653,
+      "projected_norm_fraction": {
+        "hi": 0.08024374410089369,
+        "lo": 0.05721755871840788,
+        "mean": 0.06844314509512582,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.04901348810372297,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.07930895459810632,
+        "lo": 0.002410297331411131,
+        "mean": 0.033315226431068094,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.07035374296041928,
+        "lo": -0.0037105896727531243,
+        "mean": 0.024183992221297294,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.006935514173470213
+    },
+    "L16_value_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.004588902859927921,
+        "lo": 0.0035812161215659924,
+        "mean": 0.004077015613158022,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.9882352941176471,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.004321685853071773,
+        "lo": -0.007397361260848565,
+        "mean": -0.005837257534979025,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "value",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.032606777731580945,
+        "lo": 0.012585264902620066,
+        "mean": 0.022086778203842194,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.012176994291517671,
+        "lo": 0.008641646118013062,
+        "mean": 0.010484577499609299,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.009392697143089278,
+      "projected_norm_fraction": {
+        "hi": 0.07563978766768666,
+        "lo": 0.055525282305304395,
+        "mean": 0.06555353864407643,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.05105307270320298,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.014159765101050888,
+        "lo": -0.07377979681573389,
+        "mean": -0.02438766975085495,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.027910498461802047,
+        "lo": -0.014185493817960944,
+        "mean": 0.010809107216150382,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.019858602223670523
+    },
+    "L16_value_standard_2d_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.004687934367052096,
+        "lo": 0.0029399168449052555,
+        "mean": 0.003823164973509311,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5529411764705883,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.005351313170302917,
+        "lo": -0.009221780514613141,
+        "mean": -0.007264186392395036,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 16,
+      "method": "value_standard_2d",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0215922605280428,
+        "lo": 0.008172590715643507,
+        "mean": 0.014026245061323352,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.011138873635671764,
+        "lo": 0.005533111551468655,
+        "mean": 0.008451535630834086,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.002334943427452698,
+      "projected_norm_fraction": {
+        "hi": 0.13604760991353645,
+        "lo": 0.10151932315206724,
+        "mean": 0.11852867037623191,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0855119095148723,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.037703076008846634,
+        "lo": -0.01849091182065416,
+        "mean": 0.013353496361346945,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.04640731721565365,
+        "lo": 0.020787525496957827,
+        "mean": 0.033515908062315226,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.013908035058054399
+    },
+    "L20_delta_mean_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.03264967846470206,
+        "lo": 0.012218125324976747,
+        "mean": 0.02238466631493738,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6705882352941176,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.04411242986043874,
+        "lo": -0.08253218324842652,
+        "mean": -0.06449604015457824,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "delta_mean",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0961718530362893,
+        "lo": -0.15556895344727165,
+        "mean": -0.009112754334997027,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.07502559182734382,
+        "lo": 0.014550962539404808,
+        "mean": 0.04600066259383977,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.05737395074634618,
+      "projected_norm_fraction": {
+        "hi": 0.16922569727213682,
+        "lo": 0.12330668867476824,
+        "mean": 0.1462709020896459,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.12573837996910608,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.45386327471378923,
+        "lo": 0.10457095009122586,
+        "mean": 0.2572513339423182,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.14513861771358283,
+        "lo": 0.06730373212324657,
+        "mean": 0.10469670599020278,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.11150579962149983
+    },
+    "L20_full_rank2560_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.2855784701829928,
+        "lo": 0.1706734689058811,
+        "mean": 0.22781676589561178,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7058823529411765,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.35929407274525865,
+        "lo": -0.5016170269026694,
+        "mean": -0.42895871834647364,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "full",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.46603620308465166,
+        "lo": 0.1310801933715614,
+        "mean": 0.3055888955164979,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.5457453278645376,
+        "lo": 0.2587733360817266,
+        "mean": 0.3924154722948777,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.6559376521028446,
+      "projected_norm_fraction": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 1.0,
+      "rank": 2560,
+      "recovery_vs_full": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 1.0
+    },
+    "L20_ordered_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.07683594504196846,
+        "lo": 0.05383322792744972,
+        "mean": 0.06590872222528944,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7764705882352941,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.1193836040518469,
+        "lo": -0.16587931427449806,
+        "mean": -0.14351424290828302,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "ordered_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.18439124344229701,
+        "lo": 0.08705477620820862,
+        "mean": 0.13412068630232213,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.1817887236965883,
+        "lo": 0.1176225285060333,
+        "mean": 0.150078322718392,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.15746356568738518,
+      "projected_norm_fraction": {
+        "hi": 0.22036501389187357,
+        "lo": 0.17601724029922716,
+        "mean": 0.19854687679521807,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.22575644360725294,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.439426124280327,
+        "lo": 0.22484925839614345,
+        "mean": 0.3227958727660686,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.2943536341146074,
+        "lo": 0.21961047587483606,
+        "mean": 0.2560958557109419,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.24023515046971045
+    },
+    "L20_pca_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.09124679874488817,
+        "lo": 0.05617597422526084,
+        "mean": 0.07376690926276727,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7529411764705882,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.1429654899856335,
+        "lo": -0.20351536384744304,
+        "mean": -0.17390854006364623,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.19458691519332147,
+        "lo": -0.12888420927735392,
+        "mean": 0.060885956823963173,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.20358680854938177,
+        "lo": 0.10717982396156778,
+        "mean": 0.15591904949010837,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.18607206624122657,
+      "projected_norm_fraction": {
+        "hi": 0.24232027254633481,
+        "lo": 0.1944684502111329,
+        "mean": 0.2194852555801922,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.2276552674418972,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.7062871824378889,
+        "lo": 0.32716932365624973,
+        "mean": 0.4930523300418504,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.36114509961458147,
+        "lo": 0.2812608523930966,
+        "mean": 0.31959131876621116,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.3011329413347331
+    },
+    "L20_pca_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.09134024746527174,
+        "lo": 0.05548458796831627,
+        "mean": 0.0734748023846716,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7470588235294118,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.14575818099594684,
+        "lo": -0.20351134916871413,
+        "mean": -0.1737400947728888,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.20321371866867588,
+        "lo": -0.11135831973996056,
+        "mean": 0.06335667820809167,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.20614580031975832,
+        "lo": 0.106542317600129,
+        "mean": 0.15547099374711013,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.18731150512302852,
+      "projected_norm_fraction": {
+        "hi": 0.3803049106745876,
+        "lo": 0.3325393329361955,
+        "mean": 0.35577593647746114,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.3629033043722828,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.7210190856341969,
+        "lo": 0.3325123745548038,
+        "mean": 0.49045657482258054,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.3656492915186591,
+        "lo": 0.2803321392115271,
+        "mean": 0.3215959036666125,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.30078982766635065
+    },
+    "L20_pca_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.18719320854598423,
+        "lo": 0.12705182460571354,
+        "mean": 0.15540352094823934,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.711764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.24609752757995146,
+        "lo": -0.34745928944842935,
+        "mean": -0.2964404465526083,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.34833550839012395,
+        "lo": 0.14850133345515626,
+        "mean": 0.25430796282827534,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.39886100026373955,
+        "lo": 0.2592038107329963,
+        "mean": 0.333127123296884,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.3923488476307762,
+      "projected_norm_fraction": {
+        "hi": 0.4713251041031974,
+        "lo": 0.4248353346022377,
+        "mean": 0.4483322667306953,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.4813340338720137,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.7025656895057873,
+        "lo": 0.49213436255614595,
+        "mean": 0.5913188762405203,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.6365852534872283,
+        "lo": 0.5146874521334526,
+        "mean": 0.577606491993469,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.5645080144152692
+    },
+    "L20_random_norm_matched_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.002482220444022922,
+        "lo": 0.0013150931334039303,
+        "mean": 0.0019243467753499962,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5302941176470588,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.00291191384688731,
+        "lo": -0.005472837891215984,
+        "mean": -0.004202165764785698,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.01377257811925057,
+        "lo": 0.0039658217832081386,
+        "mean": 0.008018853957052865,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.005295727350384429,
+        "lo": 0.0021974094672082764,
+        "mean": 0.003794763280953946,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.002465507299128723,
+      "projected_norm_fraction": {
+        "hi": 0.28039463428949546,
+        "lo": 0.24050664903223254,
+        "mean": 0.2599449163746576,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.25211887133115324,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.0063737250951710666,
+        "lo": -0.005021619823898849,
+        "mean": 0.001519346022476602,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.007620426297031459,
+        "lo": 0.0038511546333302384,
+        "mean": 0.005753551078760608,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.003776035928104677
+    },
+    "L20_random_norm_matched_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.010502141976117929,
+        "lo": 0.006566500562888754,
+        "mean": 0.008531965488973036,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6294117647058823,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.017309384215267405,
+        "lo": -0.025066752014667622,
+        "mean": -0.021040943719102357,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.02607829272088564,
+        "lo": -0.017570733773674026,
+        "mean": 0.007947905004274874,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.025137578530922085,
+        "lo": 0.013873682554790432,
+        "mean": 0.01924594567241885,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.018051666442124463,
+      "projected_norm_fraction": {
+        "hi": 0.38107042794091517,
+        "lo": 0.33512215473991874,
+        "mean": 0.3574584669129054,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.3629033043722828,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.08274298198542084,
+        "lo": 0.034595909649499816,
+        "mean": 0.054525891276288097,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0435749752988998,
+        "lo": 0.030267453648501693,
+        "mean": 0.036653116053902764,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.031514087504837175
+    },
+    "L20_random_norm_matched_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0066949580013603875,
+        "lo": 0.003934390708342186,
+        "mean": 0.005296447454996053,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5391176470588235,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.010715631885006856,
+        "lo": -0.016691530454349707,
+        "mean": -0.013605796969283544,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.02125689168704894,
+        "lo": 0.001383843806365737,
+        "mean": 0.010347233379106908,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.013998087104978177,
+        "lo": 0.0064258500021973685,
+        "mean": 0.010118110740753663,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.006156916857119747,
+      "projected_norm_fraction": {
+        "hi": 0.4713251041031851,
+        "lo": 0.4248353346022359,
+        "mean": 0.4483322667306899,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.4813340338720137,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.06874342781739487,
+        "lo": 0.021185708799796643,
+        "mean": 0.03960210904400321,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.026840352639532654,
+        "lo": 0.021629275941979723,
+        "mean": 0.02421250826130936,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.020401867780258036
+    },
+    "L20_random_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 5.6486252473435226e-05,
+        "lo": -3.828508377095021e-05,
+        "mean": 1.214221774648818e-05,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5414705882352941,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -4.008770520760641e-05,
+        "lo": -0.00022214277977363497,
+        "mean": -0.00013176414733221875,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0006336422907359462,
+        "lo": -0.00010480872202598489,
+        "mean": 0.00024635382933310224,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 3.68570913265586e-05,
+        "lo": -0.0003466538540979496,
+        "mean": -0.0001356192006902238,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 9.967145347067867e-05,
+      "projected_norm_fraction": {
+        "hi": 0.01756901325869232,
+        "lo": 0.016522529676608975,
+        "mean": 0.017034374855714646,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.014639780902171468,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.00036950121177129614,
+        "lo": -0.0015384606845914297,
+        "mean": -0.0003779599059360075,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0003358720627408225,
+        "lo": -0.00017750919313156915,
+        "mean": 7.965488939861211e-05,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 6.991544027921537e-05
+    },
+    "L20_random_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.00026772780867695807,
+        "lo": 0.00012874462206828298,
+        "mean": 0.00019980398954152345,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.54,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0005305253460253607,
+        "lo": -0.0007660199105748171,
+        "mean": -0.0006466750134974473,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0009709312188522077,
+        "lo": -0.0005628192594951886,
+        "mean": 0.0002075792052168135,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.0006569121711408594,
+        "lo": 0.0002065117431188757,
+        "mean": 0.000447729513503045,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.00026350189085149497,
+      "projected_norm_fraction": {
+        "hi": 0.023253219122231324,
+        "lo": 0.02241384753814442,
+        "mean": 0.02283470597919005,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.02131697991403656,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.0048843028795756485,
+        "lo": 0.0008706786978000139,
+        "mean": 0.0024950067570274712,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0014240696661480259,
+        "lo": 0.0008767133246530101,
+        "mean": 0.001129038391416678,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0006346172994294914
+    },
+    "L20_random_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": -0.00010704157681046505,
+        "lo": -0.0003970500452978919,
+        "mean": -0.0002572905524030082,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.49323529411764705,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.000230766674548049,
+        "lo": -0.00028462419347825797,
+        "mean": -1.5033526169275217e-05,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.00028805975333519817,
+        "lo": -0.003398863488952069,
+        "mean": -0.0012943258741295366,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": -0.0005967563380601844,
+        "lo": -0.001663294889128142,
+        "mean": -0.001114135153591466,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -8.834960475675326e-05,
+      "projected_norm_fraction": {
+        "hi": 0.045065830227944914,
+        "lo": 0.044131051678061174,
+        "mean": 0.044592454155474644,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.04343641766493478,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.0018555169749302474,
+        "lo": -0.0023952154107079004,
+        "mean": -0.00026188904939735525,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0007222067142694097,
+        "lo": -0.0007562677300924066,
+        "mean": -5.3825452817167694e-05,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0003679521052048356
+    },
+    "L20_rho_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.016181558118963338,
+        "lo": 0.012791698691367462,
+        "mean": 0.014439919722578435,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.9882352941176471,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.01670259176059111,
+        "lo": -0.02598710145176599,
+        "mean": -0.02154850857194548,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "rho",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.08003095953866857,
+        "lo": 0.04116165240443451,
+        "mean": 0.05951998026191764,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.04715123600691516,
+        "lo": 0.03324385713433302,
+        "mean": 0.03975832005609304,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.033797550322408484,
+      "projected_norm_fraction": {
+        "hi": 0.12390690978282004,
+        "lo": 0.10229708106316912,
+        "mean": 0.11309747235782386,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.11144522497430101,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.09043289734963644,
+        "lo": -0.031209487868526585,
+        "mean": 0.02817458599119459,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.048690433830740364,
+        "lo": 0.021491343653587035,
+        "mean": 0.03514856425993239,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.02891708250134395
+    },
+    "L20_sham_rank0_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.0,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "sham",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0,
+      "projected_norm_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0,
+      "rank": 0,
+      "recovery_vs_full": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0
+    },
+    "L20_signed_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0759201680299642,
+        "lo": 0.05284995325472522,
+        "mean": 0.06494915397342843,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7764705882352941,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.11908226818491954,
+        "lo": -0.165152624746911,
+        "mean": -0.14292050714869675,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "signed_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.17924511789478556,
+        "lo": 0.08099219006950187,
+        "mean": 0.12916425977679147,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.17871773777485148,
+        "lo": 0.11460234912871786,
+        "mean": 0.14711935366831902,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.15623793705739095,
+      "projected_norm_fraction": {
+        "hi": 0.22003155527382223,
+        "lo": 0.1756244681295686,
+        "mean": 0.19798445382014554,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.2220281415237164,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.4384062350871564,
+        "lo": 0.22449532395234034,
+        "mean": 0.321972992424993,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.2919691935018333,
+        "lo": 0.21938283001213205,
+        "mean": 0.2546386214274432,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.2414463336951917
+    },
+    "L20_standard_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.006765199985805115,
+        "lo": 0.004201438714698832,
+        "mean": 0.0055176014178018856,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.8117647058823529,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.008024031265762947,
+        "lo": -0.013518090803079799,
+        "mean": -0.010818610105501532,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "standard",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.016820741435836187,
+        "lo": -0.00359454595637559,
+        "mean": 0.007733460338340686,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.01919436193027182,
+        "lo": 0.009451924870646607,
+        "mean": 0.014219783321950123,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.011197353107760481,
+      "projected_norm_fraction": {
+        "hi": 0.08297654226930407,
+        "lo": 0.06284793152630129,
+        "mean": 0.07306036770598488,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.06603226596156246,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.02950312380292348,
+        "lo": -0.0024607274490101505,
+        "mean": 0.015407187130497381,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.023053177684825735,
+        "lo": 0.010532263835171092,
+        "mean": 0.016586158245822876,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.015683197151664822
+    },
+    "L20_value_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.006603364132299668,
+        "lo": 0.004949563453155459,
+        "mean": 0.005807677540270238,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.9647058823529412,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0056975799043867004,
+        "lo": -0.0097364865558682,
+        "mean": -0.0077312484831439645,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "value",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0460810218332916,
+        "lo": 0.02020490460138204,
+        "mean": 0.031915660037423896,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.01948912839746698,
+        "lo": 0.013081660313563873,
+        "mean": 0.01620081128395369,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.01439391187523318,
+      "projected_norm_fraction": {
+        "hi": 0.09379676202007882,
+        "lo": 0.07406473309631029,
+        "mean": 0.08391655413489378,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0802719850431617,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.033354095979800547,
+        "lo": -0.023295328889685836,
+        "mean": 0.005137894436465275,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.019815188461396797,
+        "lo": 0.006729843092020787,
+        "mean": 0.013101818676919225,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.009041959817676477
+    },
+    "L20_value_standard_2d_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0178018387157593,
+        "lo": 0.013556400896760978,
+        "mean": 0.015570272821409825,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.9411764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.019525622463963752,
+        "lo": -0.02973509284772498,
+        "mean": -0.024800193001200007,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 20,
+      "method": "value_standard_2d",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.07325679282257908,
+        "lo": 0.04131832216707865,
+        "mean": 0.05548699038164789,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.04977530923233067,
+        "lo": 0.03449610371728288,
+        "mean": 0.04208844266901272,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.033367627785228886,
+      "projected_norm_fraction": {
+        "hi": 0.14156468189426794,
+        "lo": 0.12372145463122657,
+        "mean": 0.13284746453882476,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.13058716390974343,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.08482170839004026,
+        "lo": -0.025400530475895168,
+        "mean": 0.030770685517318472,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.05475095528531618,
+        "lo": 0.02551864407466688,
+        "mean": 0.040120791511483664,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.035933919841404545
+    },
+    "L24_delta_mean_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.001989667997578597,
+        "lo": -0.010561868591803712,
+        "mean": -0.004326350215212511,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.4,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.00285530460733208,
+        "lo": -0.02913934242972718,
+        "mean": -0.014972511300906953,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "delta_mean",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": -0.02526252513132673,
+        "lo": -0.1539877089392685,
+        "mean": -0.08230214255231036,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": -0.0005539766980029998,
+        "lo": -0.043103799983244234,
+        "mean": -0.019462426455310326,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -0.012233046181099341,
+      "projected_norm_fraction": {
+        "hi": 0.08141981944771909,
+        "lo": 0.056189657686769416,
+        "mean": 0.06826546342854714,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.05479504539810808,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.1154051584916988,
+        "lo": -0.03236918952704814,
+        "mean": 0.0365567678420454,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.058094570792254815,
+        "lo": 0.0013935074924347221,
+        "mean": 0.027789174873583542,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.007519915668525561
+    },
+    "L24_full_rank2560_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.32801973627661046,
+        "lo": 0.2001668354817824,
+        "mean": 0.26432637365694367,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7176470588235294,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.3852473297611245,
+        "lo": -0.5382135005066035,
+        "mean": -0.460345627192395,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "full",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.5488288180043731,
+        "lo": 0.20549700029721588,
+        "mean": 0.38282561320208425,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.6308115481587703,
+        "lo": 0.314784673432922,
+        "mean": 0.47108847653977964,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.826882561279751,
+      "projected_norm_fraction": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 1.0,
+      "rank": 2560,
+      "recovery_vs_full": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 1.0,
+        "lo": 1.0,
+        "mean": 1.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 1.0
+    },
+    "L24_ordered_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.1193248185757161,
+        "lo": 0.06999309336032417,
+        "mean": 0.09363540115039085,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6941176470588235,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.19299170973250565,
+        "lo": -0.27370734911831957,
+        "mean": -0.23385954689599817,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "ordered_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.15619663685773308,
+        "lo": -0.1065176683177786,
+        "mean": 0.032883152418132416,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.24440248792008742,
+        "lo": 0.10359666613730246,
+        "mean": 0.17957553014298192,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.259286899485314,
+      "projected_norm_fraction": {
+        "hi": 0.17988526728085613,
+        "lo": 0.14490605538056,
+        "mean": 0.16310852647453275,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.16796791166979633,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.9435918454443218,
+        "lo": 0.32721635172084756,
+        "mean": 0.5660467101395386,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.42193613063767443,
+        "lo": 0.3388603296842528,
+        "mean": 0.37760769701201247,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.3429755379228681
+    },
+    "L24_pca_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.03635525038748924,
+        "lo": 0.017989732683091966,
+        "mean": 0.026935021199340943,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7647058823529411,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.06042734111192745,
+        "lo": -0.08891792289474566,
+        "mean": -0.07550110296567185,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.05707475565961291,
+        "lo": -0.13117359307499607,
+        "mean": -0.02216902072819064,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.07932702634667016,
+        "lo": 0.020667042387596014,
+        "mean": 0.054186901094566274,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.06760548776383447,
+      "projected_norm_fraction": {
+        "hi": 0.10731710979368861,
+        "lo": 0.08649207994887878,
+        "mean": 0.09628748616458808,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.09426152964840533,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.13675762750563425,
+        "lo": -0.04791021568492712,
+        "mean": 0.05092851682761427,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.15653994495597226,
+        "lo": 0.09470303883551368,
+        "mean": 0.12373345320285516,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.10487323378970562
+    },
+    "L24_pca_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.03313014400154237,
+        "lo": 0.014482177450347893,
+        "mean": 0.023519695873683216,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.7411764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.058990106970089946,
+        "lo": -0.0890491302838359,
+        "mean": -0.07256350205027846,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.043205368572272806,
+        "lo": -0.16268244782830207,
+        "mean": -0.04422478894688583,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.06997117719842427,
+        "lo": 0.011477736011211114,
+        "mean": 0.04379212036951857,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.059163176728924856,
+      "projected_norm_fraction": {
+        "hi": 0.1409158467966935,
+        "lo": 0.11919829422745018,
+        "mean": 0.13038172517468133,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.12192635445558185,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.15156704602153664,
+        "lo": -0.045341830276027256,
+        "mean": 0.05908199378184766,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.15465793519158977,
+        "lo": 0.09134008452716386,
+        "mean": 0.1203260082258148,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0985267522723773
+    },
+    "L24_pca_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.02910441649160099,
+        "lo": 0.0026783462190316906,
+        "mean": 0.015515063067435421,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6411764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.055284502533237176,
+        "lo": -0.1025901882152837,
+        "mean": -0.07737503067359403,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "pca",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0054198648173254885,
+        "lo": -0.26759847769195705,
+        "mean": -0.10972883777536692,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.05640463479274796,
+        "lo": -0.025064507149268448,
+        "mean": 0.01829255087801913,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.03242452823577163,
+      "projected_norm_fraction": {
+        "hi": 0.22605852007122446,
+        "lo": 0.20394696668768134,
+        "mean": 0.2154335724352177,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.21579014007120656,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.45764066282659344,
+        "lo": -0.006578600086099626,
+        "mean": 0.1859997285083263,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.17930466319828278,
+        "lo": 0.08650825216976543,
+        "mean": 0.1292194213241463,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.10633014289075379
+    },
+    "L24_random_norm_matched_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.005444335899048469,
+        "lo": 0.0033316583866761854,
+        "mean": 0.004409984163482547,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5567647058823529,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0007687270628186788,
+        "lo": -0.006844044185493006,
+        "mean": -0.0038089838489863822,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.024496920798949655,
+        "lo": 0.004037973710711966,
+        "mean": 0.0128721440175523,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.014328600681449727,
+        "lo": 0.008545298059366872,
+        "mean": 0.011278895872970688,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.005807954021034642,
+      "projected_norm_fraction": {
+        "hi": 0.19238067053232988,
+        "lo": 0.1629184688126602,
+        "mean": 0.17815023963679888,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.17674043907467032,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.014231246472849552,
+        "lo": -0.025878045792574755,
+        "mean": -0.0008251573313669151,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.00966009323648935,
+        "lo": 0.0003055025612121662,
+        "mean": 0.0052494349683319145,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.003188830329978426
+    },
+    "L24_random_norm_matched_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0020007344883073595,
+        "lo": 0.000715217457881204,
+        "mean": 0.0013453255535892776,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5411764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0004824473882120217,
+        "lo": -0.002930823505854255,
+        "mean": -0.0016691385225510273,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0017999484956781845,
+        "lo": -0.017818769373354484,
+        "mean": -0.007020136238132862,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.004643650832388525,
+        "lo": 0.00023548980436086822,
+        "mean": 0.0027138312884573213,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.004496249619124615,
+      "projected_norm_fraction": {
+        "hi": 0.1461226614129124,
+        "lo": 0.1272333429416481,
+        "mean": 0.13689136968991147,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.13006296367674466,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.017754360656991888,
+        "lo": -0.00380037339772622,
+        "mean": 0.0067900511235913005,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.006730330768838077,
+        "lo": 0.0021615813554720976,
+        "mean": 0.004285997327747078,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.004957872276723445
+    },
+    "L24_random_norm_matched_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0035079810260067665,
+        "lo": 0.0009624158901257503,
+        "mean": 0.002244585576137528,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5155882352941177,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.00328729126474055,
+        "lo": -0.00805787321799108,
+        "mean": -0.005713079115796144,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random_norm_matched",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.010660890656858288,
+        "lo": -0.006786772298153827,
+        "mean": 0.0013363018889961014,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.006583338699776631,
+        "lo": -0.0009357910694771098,
+        "mean": 0.002935313576251435,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0032569065452339456,
+      "projected_norm_fraction": {
+        "hi": 0.22605852007122398,
+        "lo": 0.2039469666876843,
+        "mean": 0.21543357243521896,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.21579014007120656,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.0232734593566264,
+        "lo": -0.003236061931526578,
+        "mean": 0.010364044921797268,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.01468034658811841,
+        "lo": 0.007987519216803587,
+        "mean": 0.011316048985853776,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.00797668587157227
+    },
+    "L24_random_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": -0.00017128687791896665,
+        "lo": -0.0005131040705240476,
+        "mean": -0.0003486139115019631,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.4447058823529412,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0006165096532467287,
+        "lo": -0.0001135591054195567,
+        "mean": 0.00026334535415974207,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0014998204767818432,
+        "lo": -0.00277489879548389,
+        "mean": -0.0006682314285945274,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": -0.0006587800413374564,
+        "lo": -0.0018426579561110841,
+        "mean": -0.0012573861742534716,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": -0.00023981932526309383,
+      "projected_norm_fraction": {
+        "hi": 0.015485656119233863,
+        "lo": 0.014424255136498393,
+        "mean": 0.01495602276366064,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.012702164642910402,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.0037756001584186684,
+        "lo": -0.0008511114656791672,
+        "mean": 0.0012549158095978377,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0005406539258457797,
+        "lo": -0.0010683750318259617,
+        "mean": -0.0002801424757510955,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": -7.118374217244329e-05
+    },
+    "L24_random_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0002500637570620767,
+        "lo": -1.9082832563532182e-05,
+        "mean": 0.00010601407372977401,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5452941176470588,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.00041642492786944706,
+        "lo": -0.0010815144228513494,
+        "mean": -0.0007322752549334971,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.0006180024429127096,
+        "lo": -0.0014265700602011456,
+        "mean": -0.00043262899303769326,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.0004026917176136121,
+        "lo": -0.0004302405101223616,
+        "mean": 9.841810542329379e-06,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0007920692557405404,
+      "projected_norm_fraction": {
+        "hi": 0.028315831564883605,
+        "lo": 0.02686489309362859,
+        "mean": 0.02758514538507308,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.026138784159845982,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.004659628634112798,
+        "lo": 0.00034464426700755313,
+        "mean": 0.0021009914290377385,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0014195009562181882,
+        "lo": 0.00045528906369971954,
+        "mean": 0.0009108846169259787,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0009388658967277837
+    },
+    "L24_random_rank5_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0005002591974256228,
+        "lo": -4.621605883952264e-05,
+        "mean": 0.00023175482498328506,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5279411764705882,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0001256066285758921,
+        "lo": -0.001462443661448178,
+        "mean": -0.0007301287441147287,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "random",
+      "n": 3400,
+      "n_gap_ge_0_05": 3160,
+      "n_gap_ge_0_10": 3040,
+      "patch_fraction": {
+        "hi": 0.004470656798564356,
+        "lo": -3.419047391204752e-05,
+        "mean": 0.001839468891800684,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.001334466920222102,
+        "lo": -0.00030093972304548564,
+        "mean": 0.000538535562693107,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0008716357075680041,
+      "projected_norm_fraction": {
+        "hi": 0.044642954964113316,
+        "lo": 0.043445588029780824,
+        "mean": 0.04404036666479622,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.04319279030571688,
+      "rank": 5,
+      "recovery_vs_full": {
+        "hi": 0.0012446313406059093,
+        "lo": -0.0053329506473421984,
+        "mean": -0.0015333945152237963,
+        "n": 3400,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0014890145874852053,
+        "lo": -0.0005560547032286346,
+        "mean": 0.00045289853427204466,
+        "n": 3040,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0002051275097170162
+    },
+    "L24_rho_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.007459085707921242,
+        "lo": 0.002753623204256991,
+        "mean": 0.005174272944246785,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6470588235294118,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0056006011128697936,
+        "lo": -0.014259952234613233,
+        "mean": -0.009947800225729532,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "rho",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.03482857411038531,
+        "lo": -0.009319665245879101,
+        "mean": 0.011937571995053409,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.02206333348722383,
+        "lo": 0.005746884972901178,
+        "mean": 0.014069425427579269,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.012377099803775615,
+      "projected_norm_fraction": {
+        "hi": 0.05568086100472322,
+        "lo": 0.04276946670364045,
+        "mean": 0.04896843851051941,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0413533142587075,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.03452674703403028,
+        "lo": -0.035255818628460486,
+        "mean": 0.0018776903865524075,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0246827591211306,
+        "lo": 0.0031457332015849557,
+        "mean": 0.014058664029493973,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.012939644676024294
+    },
+    "L24_sham_rank0_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.0,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "sham",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0,
+      "projected_norm_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0,
+      "rank": 0,
+      "recovery_vs_full": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.0
+    },
+    "L24_signed_score_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.1192911690299612,
+        "lo": 0.06990804495192424,
+        "mean": 0.09348213317612919,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6941176470588235,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.19373630340072795,
+        "lo": -0.27418322646121623,
+        "mean": -0.23431102975747276,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "signed_score",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.15531777240668004,
+        "lo": -0.10724327968800838,
+        "mean": 0.0314128552876054,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.24400049196023996,
+        "lo": 0.1023085186405956,
+        "mean": 0.1786256779546463,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.2605348813038534,
+      "projected_norm_fraction": {
+        "hi": 0.18056170643419328,
+        "lo": 0.14555208902774283,
+        "mean": 0.1636852495309861,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.16846682071655888,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.9558542863353678,
+        "lo": 0.32990985927892685,
+        "mean": 0.5718253975516376,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.4222367015080728,
+        "lo": 0.3403782007509506,
+        "mean": 0.37838015762435984,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.3412643232196616
+    },
+    "L24_standard_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.002067301618806858,
+        "lo": 0.0005081366242484888,
+        "mean": 0.0012225335463079624,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.611764705882353,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0009231583920525701,
+        "lo": -0.0036430083570550527,
+        "mean": -0.0023180892921582843,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "standard",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.00897968465201733,
+        "lo": -0.009296092361521804,
+        "mean": -0.0002513684304526582,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.005920831539268076,
+        "lo": -4.718803005482947e-06,
+        "mean": 0.0030755010378452686,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.0025708992145591597,
+      "projected_norm_fraction": {
+        "hi": 0.04895818626617622,
+        "lo": 0.036532558776519314,
+        "mean": 0.042497157910018304,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.0339798445673341,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.011308613862692083,
+        "lo": -0.05389205714734546,
+        "mean": -0.01289580904580262,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.007236489904840807,
+        "lo": 0.000427107586614767,
+        "mean": 0.004010858219438074,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.003969063130119329
+    },
+    "L24_value_rank1_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.005370988096602517,
+        "lo": 0.0005686444318369842,
+        "mean": 0.003029468414565834,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.5764705882352941,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.0016316254181115094,
+        "lo": -0.011010132445630741,
+        "mean": -0.0064065251802287075,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "value",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.04051812928223964,
+        "lo": -0.015277866205463932,
+        "mean": 0.010466198002479329,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.015568335212395224,
+        "lo": 0.001452562551799374,
+        "mean": 0.008859598587541095,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.010586557018538726,
+      "projected_norm_fraction": {
+        "hi": 0.058800150353466356,
+        "lo": 0.04584232955670737,
+        "mean": 0.052243024794476206,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.05020628062029518,
+      "rank": 1,
+      "recovery_vs_full": {
+        "hi": 0.132831795370565,
+        "lo": -0.023480184635214684,
+        "mean": 0.03924711364451856,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.016098867622619757,
+        "lo": -0.0019083597861566594,
+        "mean": 0.00699060916195272,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.012460822222939111
+    },
+    "L24_value_standard_2d_rank2_alpha1_fictional_semantic_adjective_counts": {
+      "aligned_effect": {
+        "hi": 0.007495586825533116,
+        "lo": 0.002230211636780746,
+        "mean": 0.004883650392671105,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "alpha": 1.0,
+      "direction_match_rate": 0.6058823529411764,
+      "eval_variant": "fictional_semantic_adjective_counts",
+      "kl_patched_to_donor_delta_vs_base": {
+        "hi": -0.004884100344723783,
+        "lo": -0.014860392666863583,
+        "mean": -0.009853345573020554,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "layer": 24,
+      "method": "value_standard_2d",
+      "n": 170,
+      "n_gap_ge_0_05": 158,
+      "n_gap_ge_0_10": 152,
+      "patch_fraction": {
+        "hi": 0.036512210562790325,
+        "lo": -0.013168850631461998,
+        "mean": 0.011588606513268599,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "patch_fraction_gap_ge_0_10": {
+        "hi": 0.022719819842624986,
+        "lo": 0.005228120913824148,
+        "mean": 0.013601133451561161,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "patch_fraction_median": 0.012967597979003145,
+      "projected_norm_fraction": {
+        "hi": 0.08006727358833184,
+        "lo": 0.06816680689468461,
+        "mean": 0.07421514359623683,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "projected_norm_fraction_median": 0.06991217632862515,
+      "rank": 2,
+      "recovery_vs_full": {
+        "hi": 0.07181198981513179,
+        "lo": -0.021413307501453222,
+        "mean": 0.023706090759746386,
+        "n": 170,
+        "n_clusters": 85
+      },
+      "recovery_vs_full_gap_ge_0_10": {
+        "hi": 0.023208468639802894,
+        "lo": 0.0018697618225023186,
+        "mean": 0.012774855086377924,
+        "n": 152,
+        "n_clusters": 76
+      },
+      "recovery_vs_full_median": 0.016705228503942914
+    }
+  },
+  "n_rows": 67320,
+  "run": {
+    "activations_npz": "results/manifold_groups_poc/gradable_size_geometry_broad_final_token_gemma3.npz",
+    "alphas": "1.0",
+    "data_path": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_fictional_semantic_adjective_counts.jsonl",
+    "device": "mps",
+    "ended_at_utc": "2026-05-27T11:37:42.131454+00:00",
+    "eval_variant": "fictional_semantic_adjective_counts",
+    "git_commit": "d42bae5fc1a85c839f8c32d2747830199e99cca7",
+    "layers": "16,20,24",
+    "metadata_csv": "results/manifold_groups_poc/gradable_size_geometry_broad_final_token_gemma3.metadata.csv",
+    "methods": "pca,rho,ordered_score,signed_score,delta_mean,random,random_norm_matched,value,standard,value_standard_2d",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "normalize_by_length": true,
+    "patch_site": "final_prompt_token",
+    "random_repeats": 20,
+    "ranks": "1,2,5",
+    "replacement_source": "decoder_block_output_hook",
+    "started_at_utc": "2026-05-26T16:23:47.529125+00:00",
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "train_variant": "iso_ratio_adjective_counts",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 69234.68424054142
+  },
+  "schema_version": "gradable_size_low_rank_patch_v1"
+}

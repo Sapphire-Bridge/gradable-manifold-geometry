@@ -1,0 +1,45 @@
+{
+  "label_order": [
+    "cold",
+    "cool",
+    "warm",
+    "hot"
+  ],
+  "mean_abs_observed_ordered_shift": 0.6631985647988342,
+  "mean_entropy": 1.044406557200197,
+  "mean_expected_margin": -0.26233111534799847,
+  "n_pairs": 84,
+  "n_sides": 168,
+  "pair_both_correct_rate": 0.2619047619047619,
+  "run": {
+    "data_path": "results/manifold_groups_poc/gradable_temperature_disamb_pairs_v1_2.jsonl",
+    "data_sha256": "3b6d578518167406b0c611c694df286fc08dcf9f6d9edc5818b0e3740036ca14",
+    "device": "mps",
+    "ended_at_utc": "2026-05-24T09:30:43.441073+00:00",
+    "git_commit": "ea7c414720de1ae44aabdd9b17685ad45506b7e1",
+    "logprobs_dtype": "float32",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "normalize_by_length": true,
+    "out_csv": "results/manifold_groups_poc/gradable_temperature_v1_2_behavior_gemma3.sides.csv",
+    "out_pairs_csv": "results/manifold_groups_poc/gradable_temperature_v1_2_behavior_gemma3.pairs.csv",
+    "out_summary": "results/manifold_groups_poc/gradable_temperature_v1_2_behavior_gemma3.summary.json",
+    "seed": 0,
+    "started_at_utc": "2026-05-24T09:28:14.856264+00:00",
+    "strict_finite": true,
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 148.58351062517613
+  },
+  "schema_version": "gradable_behavior_v1",
+  "shift_direction_match_rate": 0.8333333333333334,
+  "side_accuracy": 0.5714285714285714
+}

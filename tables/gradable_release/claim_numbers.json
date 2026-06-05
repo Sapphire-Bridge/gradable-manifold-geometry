@@ -1,0 +1,310 @@
+{
+  "model": "google/gemma-3-4b-pt",
+  "revision": "cc012e0",
+  "note": "Canonical claim numbers for the gradable size-calibration geometry. Bound claims are re-derived from the listed source artifact (mean/lo/hi rounded to 3 dp) and asserted to appear verbatim in the listed docs. Run scripts/check_gradable_claim_numbers.py.",
+  "claims": [
+    {
+      "id": "size_transfer_fic_to_iso_effect",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3.summary.json",
+        "json_path": "/groups/L20_pca_rank5_alpha1_iso_ratio_adjective_counts/aligned_effect",
+        "fields": {
+          "mean": 0.162,
+          "lo": 0.11,
+          "hi": 0.209
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.162 [0.110, 0.209]"
+    },
+    {
+      "id": "size_transfer_fic_to_iso_recovery",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3.summary.json",
+        "json_path": "/groups/L20_pca_rank5_alpha1_iso_ratio_adjective_counts/recovery_vs_full",
+        "fields": {
+          "mean": 0.86,
+          "lo": 0.595,
+          "hi": 1.146
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "0.860 [0.595, 1.146]"
+    },
+    {
+      "id": "size_transfer_iso_to_fic_effect",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_iso_ratio_adjective_counts_eval_fictional_semantic_adjective_counts_l162024_gemma3.summary.json",
+        "json_path": "/groups/L20_pca_rank5_alpha1_fictional_semantic_adjective_counts/aligned_effect",
+        "fields": {
+          "mean": 0.155,
+          "lo": 0.127,
+          "hi": 0.187
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.155 [0.127, 0.187]"
+    },
+    {
+      "id": "size_transfer_iso_to_fic_recovery",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_low_rank_patch_train_iso_ratio_adjective_counts_eval_fictional_semantic_adjective_counts_l162024_gemma3.summary.json",
+        "json_path": "/groups/L20_pca_rank5_alpha1_fictional_semantic_adjective_counts/recovery_vs_full",
+        "fields": {
+          "mean": 0.591,
+          "lo": 0.492,
+          "hi": 0.703
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "0.591 [0.492, 0.703]"
+    },
+    {
+      "id": "cross_temp_to_size",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_low_rank_control_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_temperature_source_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": 0.081,
+          "lo": 0.043,
+          "hi": 0.118
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.081 [0.043, 0.118]"
+    },
+    {
+      "id": "cross_age_to_size",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_low_rank_control_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_age_source_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": 0.07,
+          "lo": 0.042,
+          "hi": 0.097
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.070 [0.042, 0.097]"
+    },
+    {
+      "id": "source_state_temp",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_subspace_transfer_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_temperature_source_basis_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": 0.028,
+          "lo": 0.017,
+          "hi": 0.039
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.028 [0.017, 0.039]"
+    },
+    {
+      "id": "source_state_age",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_subspace_transfer_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_age_source_basis_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": 0.006,
+          "lo": -0.001,
+          "hi": 0.013
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.006 [-0.001, 0.013]"
+    },
+    {
+      "id": "source_delta_temp",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_delta_basis_transfer_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_temperature_source_basis_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": 0.032,
+          "lo": 0.02,
+          "hi": 0.045
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.032 [0.020, 0.045]"
+    },
+    {
+      "id": "source_delta_age",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_cross_domain_delta_basis_transfer_l20_r5_gemma3.summary.json",
+        "json_path": "/groups/L20_age_source_basis_pca_rank5_alpha1/aligned_effect",
+        "fields": {
+          "mean": -0.0,
+          "lo": -0.005,
+          "hi": 0.005
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "-0.000 [-0.005, 0.005]"
+    },
+    {
+      "id": "steering_pca_delta_mean",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_semantic_steering_l20_r5_gemma3.summary.json",
+        "json_path": "/curve_groups/L20_pca_delta_mean_rank5/score_slope_per_alpha",
+        "fields": {
+          "mean": 0.029,
+          "lo": 0.026,
+          "hi": 0.032
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.029 [0.026, 0.032]"
+    },
+    {
+      "id": "steering_random_norm_matched",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_semantic_steering_l20_r5_gemma3.summary.json",
+        "json_path": "/curve_groups/L20_random_norm_matched_rank5/score_slope_per_alpha",
+        "fields": {
+          "mean": 0.005,
+          "lo": 0.003,
+          "hi": 0.008
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.005 [0.003, 0.008]"
+    },
+    {
+      "id": "steering_standard",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_semantic_steering_l20_r5_gemma3.summary.json",
+        "json_path": "/curve_groups/L20_standard_rank1/score_slope_per_alpha",
+        "fields": {
+          "mean": 0.044,
+          "lo": 0.042,
+          "hi": 0.046
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "+0.044 [0.042, 0.046]"
+    },
+    {
+      "id": "steering_sham",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_semantic_steering_l20_r5_gemma3.summary.json",
+        "json_path": "/curve_groups/L20_sham_rank0/score_slope_per_alpha",
+        "fields": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ]
+    },
+    {
+      "id": "behavior_r_fictional",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_recompute.json",
+        "json_path": "/domains/size/side_metrics_unique/corr_ordered_score_vs_predictor/r",
+        "fields": {
+          "value": 0.611
+        }
+      },
+      "docs": [
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "0.611 [0.531, 0.692]"
+    },
+    {
+      "id": "behavior_r_iso",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_v2_iso_ratio_adjective_counts_behavior_recompute.json",
+        "json_path": "/domains/size/side_metrics_unique/corr_ordered_score_vs_predictor/r",
+        "fields": {
+          "value": 0.68
+        }
+      },
+      "docs": [
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ],
+      "doc_string": "0.680 [0.514, 0.836]"
+    },
+    {
+      "id": "principal_angles_l20",
+      "doc_string": "33.1, 49.0, 74.2, 77.7, 84.9",
+      "docs": [
+        "README.md",
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ]
+    },
+    {
+      "id": "behavior_r_fictional_ci",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_recompute.json",
+        "json_path": "/domains/size/side_metrics_unique/corr_ordered_score_vs_predictor/bootstrap_prompt95",
+        "fields": {
+          "lo": 0.531,
+          "hi": 0.692
+        }
+      },
+      "doc_string": "[0.531, 0.692]",
+      "docs": [
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ]
+    },
+    {
+      "id": "behavior_r_iso_ci",
+      "binding": {
+        "source_file": "results/manifold_groups_poc/gradable_size_v2_iso_ratio_adjective_counts_behavior_recompute.json",
+        "json_path": "/domains/size/side_metrics_unique/corr_ordered_score_vs_predictor/bootstrap_prompt95",
+        "fields": {
+          "lo": 0.514,
+          "hi": 0.836
+        }
+      },
+      "doc_string": "[0.514, 0.836]",
+      "docs": [
+        "docs/GRADABLE_MANIFOLD_ONE_PAGER.md"
+      ]
+    }
+  ]
+}

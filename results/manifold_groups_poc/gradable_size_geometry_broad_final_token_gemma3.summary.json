@@ -1,0 +1,78 @@
+{
+  "array_shapes": {
+    "12": [
+      84,
+      2560
+    ],
+    "16": [
+      84,
+      2560
+    ],
+    "20": [
+      84,
+      2560
+    ],
+    "24": [
+      84,
+      2560
+    ],
+    "28": [
+      84,
+      2560
+    ],
+    "32": [
+      84,
+      2560
+    ],
+    "33": [
+      84,
+      2560
+    ],
+    "8": [
+      84,
+      2560
+    ]
+  },
+  "layers": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    33
+  ],
+  "n_rows": 84,
+  "outputs": {
+    "metadata_csv": "results/manifold_groups_poc/\n  gradable_size_geometry_broad_final_token_gemma3.metadata.csv",
+    "npz": "results/manifold_groups_poc/\n  gradable_size_geometry_broad_final_token_gemma3.npz",
+    "summary_json": "results/manifold_groups_poc/\n  gradable_size_geometry_broad_final_token_gemma3.summary.json"
+  },
+  "run": {
+    "device": "mps",
+    "ended_at_utc": "2026-05-25T21:16:04.108783+00:00",
+    "git_commit": "ec69a45ef793ca8dfaad7a336e11f4bd42eb762e",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "replacement_source": "decoder_block_output_hook",
+    "started_at_utc": "2026-05-25T21:15:27.289185+00:00",
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 36.819292708300054
+  },
+  "schema_version": "gradable_size_activation_extraction_v1",
+  "site": "final_prompt_token",
+  "variants": [
+    "fictional_semantic_adjective_counts",
+    "iso_ratio_adjective_counts"
+  ]
+}

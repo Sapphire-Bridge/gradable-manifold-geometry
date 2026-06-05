@@ -1,0 +1,165 @@
+{
+  "config": {
+    "bootstrap_B": 5000,
+    "ci": 0.95,
+    "permutation_B": 20000,
+    "seed": 0,
+    "side_dedup_key": "prompt_hash",
+    "strict": true
+  },
+  "domains": {
+    "size": {
+      "consistency_checks": {
+        "expected_labels_not_in_label_order": 0,
+        "missing_prob_columns": [],
+        "prob_mass_max": 1.0000000000000002,
+        "prob_mass_min": 0.9999999999999998
+      },
+      "counts": {
+        "n_pair_rows_recomputed": 85,
+        "n_pairs_jsonl": 85,
+        "n_side_rows": 170,
+        "n_unique_sides": 62,
+        "n_valid_direction_pairs": 85
+      },
+      "domain": "size",
+      "inputs": {
+        "data_jsonl": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_fictional_semantic_adjective_counts.jsonl",
+        "data_sha256": "e44cd13ef30e42e9db3151d4640b441f9e8a03217b5c2666e6fd51060485d058",
+        "label_order": [
+          "tiny",
+          "small",
+          "large",
+          "huge"
+        ],
+        "pairs_csv": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_gemma3.pairs.csv",
+        "pairs_sha256": "94938067218b232e295460eb1ed5cbafdb43d56ac60bd7b3b866c7978f2df125",
+        "predictor": "log_ratio",
+        "sides_csv": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_gemma3.sides.csv",
+        "sides_sha256": "470c205be3c3fbbaf017f2ff3e03fe74779cdeed5394a79a87a039fb4d70fbc4"
+      },
+      "orientation": {
+        "expected_shift_sign_counts": {
+          "negative": 48,
+          "positive": 37
+        },
+        "is_orientation_balanced": true,
+        "observed_ordered_shift_sign_counts": {
+          "negative": 52,
+          "positive": 33
+        },
+        "predictor_shift_sign_counts": {
+          "negative": 48,
+          "positive": 37
+        }
+      },
+      "pair_metrics": {
+        "mean_abs_observed_ordered_shift": 0.41904901340362805,
+        "mean_aligned_observed_shift": 0.30243090019872937
+      },
+      "shift_direction_match": {
+        "binomial_p_two_sided_vs_0_5_naive": 7.395947454563743e-05,
+        "count": 61,
+        "n": 85,
+        "rate": 0.7176470588235294,
+        "wilson95_naive": {
+          "hi": 0.8023114653651233,
+          "lo": 0.6141607593275837
+        }
+      },
+      "side_metrics_expanded": {
+        "argmax_label_counts": {
+          "large": 104,
+          "small": 66
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_pair95": {
+            "hi": 0.8117990362550896,
+            "lo": 0.7361045306119178
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": 0.7739949424872967
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.6342501020620448,
+            "lo": 0.5253287716317082
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.5793475881525745,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "corr_signed_score_vs_predictor": {
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.5690505416331063,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "expected_label_counts": {
+          "huge": 67,
+          "large": 31,
+          "small": 24,
+          "tiny": 48
+        },
+        "mean_entropy": 0.6455373572122668,
+        "side_accuracy": 0.3235294117647059,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.09491039242791496,
+            "lo": 0.06821479467695171
+          },
+          "slope": 0.08019041901167252
+        }
+      },
+      "side_metrics_unique": {
+        "argmax_label_counts": {
+          "large": 37,
+          "small": 25
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_prompt95": {
+            "hi": 0.8703338769939416,
+            "lo": 0.7563590415898327
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": 0.8149315333219037
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.6922726626677004,
+            "lo": 0.5306704492077946
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.6113918061726307,
+          "within_target_permutation_p_two_sided": 0.0006499675016249188
+        },
+        "corr_signed_score_vs_predictor": {
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.6018986478990055,
+          "within_target_permutation_p_two_sided": 0.00044997750112494374
+        },
+        "expected_label_counts": {
+          "huge": 28,
+          "large": 7,
+          "small": 5,
+          "tiny": 22
+        },
+        "mean_entropy": 0.6715403028572573,
+        "side_accuracy": 0.1935483870967742,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.08960557287536755,
+            "lo": 0.0537188206333392
+          },
+          "slope": 0.06860736790669204
+        }
+      },
+      "warnings": []
+    }
+  },
+  "schema_version": "gradable_behavior_recompute_v1",
+  "version": "v2_fictional_semantic_adjective_counts"
+}

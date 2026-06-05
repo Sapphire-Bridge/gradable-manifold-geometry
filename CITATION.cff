@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Gradable Manifold Geometry: Bierwisch Gradability as a Mechanistic Target"
+abstract: >-
+  Theory-guided contrast design (rho = log(value/standard)) identifies a
+  behaviorally causal low-rank layer-20 size-calibration geometry in
+  Gemma-3-4B that transfers across two size operationalizations and supports
+  local linear steering, with partial, asymmetric cross-domain overlap.
+authors:
+  - family-names: Borck
+    given-names: Felix
+    affiliation: Sapphire-Bridge
+version: 0.1.0
+date-released: "2026-06-05"
+license: MIT
+repository-code: "https://github.com/Sapphire-Bridge/gradable-manifold-geometry"
+keywords:
+  - mechanistic interpretability
+  - gradable adjectives
+  - activation patching
+  - manifold steering
+  - Gemma

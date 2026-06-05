@@ -1,0 +1,34 @@
+{
+  "schema": "gradable_release_manifest_v1",
+  "model": {
+    "name_or_path": "google/gemma-3-4b-pt",
+    "revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "site": "final_prompt_token"
+  },
+  "note": "External audit artifacts: large row-level low-rank patch CSVs that are intentionally NOT committed to keep the repository lean. The committed .md/.summary.json files and the four figures are sufficient to read the result; these CSVs support row-level reanalysis. Verify a downloaded copy with: shasum -a 256 <file>  (compare bytes/rows/sha256 below).",
+  "external_artifacts": [
+    {
+      "filename": "gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3.csv",
+      "direction": "forward (fictional_semantic -> iso_ratio)",
+      "rows": 18217,
+      "bytes": 10566410,
+      "sha256": "9cf0cb89667445a76ac287d0382f3b0d788afe2c707a93ff5a10e3441dca91af",
+      "committed": false,
+      "generator": "TOKENIZERS_PARALLELISM=false TRAIN_VARIANT=fictional_semantic_adjective_counts EVAL_VARIANT=iso_ratio_adjective_counts DEVICE=mps TORCH_DTYPE=float32 LAYERS=16,20,24 ALPHAS=1.0 OUT_PREFIX=results/manifold_groups_poc/gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3 bash scripts/run_gradable_size_low_rank_patch.sh"
+    },
+    {
+      "filename": "gradable_size_low_rank_patch_train_iso_ratio_adjective_counts_eval_fictional_semantic_adjective_counts_l162024_gemma3.csv",
+      "direction": "reverse (iso_ratio -> fictional_semantic)",
+      "rows": 67321,
+      "bytes": 39763250,
+      "sha256": "9a234acdce24819b0b5faf3d65b969e46953a220ac6375ea8ff965a8f026d735",
+      "committed": false,
+      "generator": "TOKENIZERS_PARALLELISM=false TRAIN_VARIANT=iso_ratio_adjective_counts EVAL_VARIANT=fictional_semantic_adjective_counts DEVICE=mps TORCH_DTYPE=float32 LAYERS=16,20,24 ALPHAS=1.0 bash scripts/run_gradable_size_low_rank_patch.sh"
+    }
+  ],
+  "committed_companions": [
+    "gradable_size_low_rank_patch_train_fictional_semantic_adjective_counts_eval_iso_ratio_adjective_counts_l162024_normmatched_r20_gemma3.summary.json",
+    "gradable_size_low_rank_patch_train_iso_ratio_adjective_counts_eval_fictional_semantic_adjective_counts_l162024_gemma3.summary.json"
+  ]
+}

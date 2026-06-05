@@ -1,0 +1,8 @@
+# Minimal pinned runtime + test dependencies for reproducible paper runs.
+torch==2.5.1
+transformers==4.57.3
+tokenizers==0.22.1
+numpy==1.26.4
+matplotlib==3.9.2
+PyYAML==6.0.3
+pytest==9.0.1

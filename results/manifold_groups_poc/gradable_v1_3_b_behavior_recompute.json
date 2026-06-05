@@ -1,0 +1,431 @@
+{
+  "config": {
+    "bootstrap_B": 5000,
+    "ci": 0.95,
+    "permutation_B": 20000,
+    "seed": 0,
+    "side_dedup_key": "prompt_hash",
+    "strict": true
+  },
+  "domains": {
+    "age": {
+      "consistency_checks": {
+        "expected_labels_not_in_label_order": 0,
+        "missing_prob_columns": [],
+        "prob_mass_max": 1.0000000000000002,
+        "prob_mass_min": 0.9999999999999998
+      },
+      "counts": {
+        "n_pair_rows_recomputed": 72,
+        "n_pairs_jsonl": 72,
+        "n_side_rows": 144,
+        "n_unique_sides": 46,
+        "n_valid_direction_pairs": 72
+      },
+      "domain": "age",
+      "inputs": {
+        "data_jsonl": "results/manifold_groups_poc/gradable_age_disamb_pairs_v1_3_b.jsonl",
+        "data_sha256": "6bb111a15d7558110f97eab9d27731beab0040f274d309b18af5932cf17ceab4",
+        "label_order": [
+          "young",
+          "youthful",
+          "mature",
+          "old"
+        ],
+        "pairs_csv": "results/manifold_groups_poc/gradable_age_v1_3_b_behavior_gemma3.pairs.csv",
+        "pairs_sha256": "9b095e46aa78c2baf49289b45c75160e1aa6a52bef33b4e771f2119b400f0ac1",
+        "predictor": "log_ratio",
+        "sides_csv": "results/manifold_groups_poc/gradable_age_v1_3_b_behavior_gemma3.sides.csv",
+        "sides_sha256": "f8efa27da5d74370af51acddd335d4131fb7b36e4266dc5eb9be40eddea6731e"
+      },
+      "orientation": {
+        "expected_shift_sign_counts": {
+          "negative": 30,
+          "positive": 42
+        },
+        "is_orientation_balanced": true,
+        "observed_ordered_shift_sign_counts": {
+          "negative": 32,
+          "positive": 40
+        },
+        "predictor_shift_sign_counts": {
+          "negative": 30,
+          "positive": 42
+        }
+      },
+      "pair_metrics": {
+        "mean_abs_observed_ordered_shift": 0.23794592422301594,
+        "mean_aligned_observed_shift": -0.1867850800032974
+      },
+      "shift_direction_match": {
+        "binomial_p_two_sided_vs_0_5_naive": 2.568720337924735e-05,
+        "count": 18,
+        "n": 72,
+        "rate": 0.25,
+        "wilson95_naive": {
+          "hi": 0.3609350740434394,
+          "lo": 0.1643905122547895
+        }
+      },
+      "side_metrics_expanded": {
+        "argmax_label_counts": {
+          "old": 144
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_pair95": {
+            "hi": -0.06928263755036014,
+            "lo": -0.351164764856536
+          },
+          "permutation_p_two_sided": 0.01224938753062347,
+          "r": -0.2103793594674992
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": -0.13340886703947857,
+            "lo": -0.41050655179778284
+          },
+          "permutation_p_two_sided": 0.0007999600019999,
+          "predictor": "log_value_over_standard",
+          "r": -0.2712159535253811,
+          "within_target_permutation_p_two_sided": 0.06014699265036748
+        },
+        "expected_label_counts": {
+          "mature": 24,
+          "old": 49,
+          "young": 36,
+          "youthful": 35
+        },
+        "mean_entropy": 0.5900815383973157,
+        "side_accuracy": 0.3402777777777778,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": -0.019260978880981914,
+            "lo": -0.06126280335940462
+          },
+          "slope": -0.03988301244655897
+        }
+      },
+      "side_metrics_unique": {
+        "argmax_label_counts": {
+          "old": 46
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_prompt95": {
+            "hi": 0.2612281846668703,
+            "lo": -0.28940993098986184
+          },
+          "permutation_p_two_sided": 0.8730063496825159,
+          "r": -0.024491957833279877
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.14422648727233134,
+            "lo": -0.3811631581214096
+          },
+          "permutation_p_two_sided": 0.39388030598470075,
+          "predictor": "log_value_over_standard",
+          "r": -0.127939699405342,
+          "within_target_permutation_p_two_sided": 0.9594520273986301
+        },
+        "expected_label_counts": {
+          "mature": 5,
+          "old": 20,
+          "young": 13,
+          "youthful": 8
+        },
+        "mean_entropy": 0.5757566983149583,
+        "side_accuracy": 0.43478260869565216,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.018363869345371462,
+            "lo": -0.05016064155472091
+          },
+          "slope": -0.01594700996610922
+        }
+      },
+      "warnings": []
+    },
+    "size": {
+      "consistency_checks": {
+        "expected_labels_not_in_label_order": 0,
+        "missing_prob_columns": [],
+        "prob_mass_max": 1.0000000000000002,
+        "prob_mass_min": 0.9999999999999998
+      },
+      "counts": {
+        "n_pair_rows_recomputed": 85,
+        "n_pairs_jsonl": 85,
+        "n_side_rows": 170,
+        "n_unique_sides": 62,
+        "n_valid_direction_pairs": 85
+      },
+      "domain": "size",
+      "inputs": {
+        "data_jsonl": "results/manifold_groups_poc/gradable_size_disamb_pairs_v1_3_b.jsonl",
+        "data_sha256": "f9fea05d98797b317fb93e19336cc8abe2e883ea2fc1c5583097e7febec42bc4",
+        "label_order": [
+          "tiny",
+          "small",
+          "large",
+          "huge"
+        ],
+        "pairs_csv": "results/manifold_groups_poc/gradable_size_v1_3_b_behavior_gemma3.pairs.csv",
+        "pairs_sha256": "ed4996fe20e7ec21726a9d64954a7ac2073104e41087f5aa9cde69d8750d861d",
+        "predictor": "log_ratio",
+        "sides_csv": "results/manifold_groups_poc/gradable_size_v1_3_b_behavior_gemma3.sides.csv",
+        "sides_sha256": "52a9c35d39dd778871102337ca88b11b8e67aab32dd6839ae1c6d0bb36e40464"
+      },
+      "orientation": {
+        "expected_shift_sign_counts": {
+          "negative": 43,
+          "positive": 42
+        },
+        "is_orientation_balanced": true,
+        "observed_ordered_shift_sign_counts": {
+          "negative": 40,
+          "positive": 45
+        },
+        "predictor_shift_sign_counts": {
+          "negative": 43,
+          "positive": 42
+        }
+      },
+      "pair_metrics": {
+        "mean_abs_observed_ordered_shift": 0.21760625328161054,
+        "mean_aligned_observed_shift": 0.16236357091560172
+      },
+      "shift_direction_match": {
+        "binomial_p_two_sided_vs_0_5_naive": 2.1750638050848607e-08,
+        "count": 68,
+        "n": 85,
+        "rate": 0.8,
+        "wilson95_naive": {
+          "hi": 0.8712100185598731,
+          "lo": 0.7028462911516961
+        }
+      },
+      "side_metrics_expanded": {
+        "argmax_label_counts": {
+          "large": 39,
+          "small": 131
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_pair95": {
+            "hi": 0.7352872413577514,
+            "lo": 0.6107077638514095
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": 0.676578541872036
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.6995854573667789,
+            "lo": 0.5064606111249259
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.6070774969066508,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "expected_label_counts": {
+          "huge": 67,
+          "large": 31,
+          "small": 24,
+          "tiny": 48
+        },
+        "mean_entropy": 0.7600963567900075,
+        "side_accuracy": 0.19411764705882353,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.059592731505412805,
+            "lo": 0.037477666593804214
+          },
+          "slope": 0.04808633000907943
+        }
+      },
+      "side_metrics_unique": {
+        "argmax_label_counts": {
+          "large": 12,
+          "small": 50
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_prompt95": {
+            "hi": 0.7844843936470149,
+            "lo": 0.5839007976440207
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": 0.6910639146312862
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.7692438508748891,
+            "lo": 0.48645824630177814
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.6335706991228166,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "expected_label_counts": {
+          "huge": 28,
+          "large": 7,
+          "small": 5,
+          "tiny": 22
+        },
+        "mean_entropy": 0.7425883242102781,
+        "side_accuracy": 0.11290322580645161,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.06044688107688764,
+            "lo": 0.02996952746081918
+          },
+          "slope": 0.04401636157682202
+        }
+      },
+      "warnings": []
+    },
+    "temperature": {
+      "consistency_checks": {
+        "expected_labels_not_in_label_order": 0,
+        "missing_prob_columns": [],
+        "prob_mass_max": 1.0000000000000002,
+        "prob_mass_min": 0.9999999999999998
+      },
+      "counts": {
+        "n_pair_rows_recomputed": 84,
+        "n_pairs_jsonl": 84,
+        "n_side_rows": 168,
+        "n_unique_sides": 58,
+        "n_valid_direction_pairs": 84
+      },
+      "domain": "temperature",
+      "inputs": {
+        "data_jsonl": "results/manifold_groups_poc/gradable_temperature_disamb_pairs_v1_3_b.jsonl",
+        "data_sha256": "f2b7e0f0ccdcdac633c056f9468ecccd68dcaad3cfa58bb6eee61962c5459c29",
+        "label_order": [
+          "cold",
+          "cool",
+          "warm",
+          "hot"
+        ],
+        "pairs_csv": "results/manifold_groups_poc/gradable_temperature_v1_3_b_behavior_gemma3.pairs.csv",
+        "pairs_sha256": "785f00f567ba4e2f3956af90f681db19697e5424c678457f7e855078501d7f41",
+        "predictor": "delta",
+        "sides_csv": "results/manifold_groups_poc/gradable_temperature_v1_3_b_behavior_gemma3.sides.csv",
+        "sides_sha256": "80102bc157a06d15c274ca11b1a021ede052d65670606ef929fb8a9b4c50b1ff"
+      },
+      "orientation": {
+        "expected_shift_sign_counts": {
+          "negative": 39,
+          "positive": 45
+        },
+        "is_orientation_balanced": true,
+        "observed_ordered_shift_sign_counts": {
+          "negative": 46,
+          "positive": 38
+        },
+        "predictor_shift_sign_counts": {
+          "negative": 39,
+          "positive": 45
+        }
+      },
+      "pair_metrics": {
+        "mean_abs_observed_ordered_shift": 1.0284834067307074,
+        "mean_aligned_observed_shift": -1.0272870009972113
+      },
+      "shift_direction_match": {
+        "binomial_p_two_sided_vs_0_5_naive": 2.0972709481945113e-19,
+        "count": 1,
+        "n": 84,
+        "rate": 0.011904761904761904,
+        "wilson95_naive": {
+          "hi": 0.064395437507714,
+          "lo": 0.002104583087549225
+        }
+      },
+      "side_metrics_expanded": {
+        "argmax_label_counts": {
+          "cold": 41,
+          "hot": 123,
+          "warm": 4
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_pair95": {
+            "hi": -0.4569126121270101,
+            "lo": -0.6811114161848555
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": -0.5721479942453579
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": -0.5373336967074996,
+            "lo": -0.7032956418360633
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "delta_value_minus_standard",
+          "r": -0.6211166543018662,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "expected_label_counts": {
+          "cold": 65,
+          "cool": 22,
+          "hot": 48,
+          "warm": 33
+        },
+        "mean_entropy": 0.929635730046711,
+        "side_accuracy": 0.17261904761904762,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": -0.006325704842286566,
+            "lo": -0.00813743951325859
+          },
+          "slope": -0.007214674520150237
+        }
+      },
+      "side_metrics_unique": {
+        "argmax_label_counts": {
+          "cold": 14,
+          "hot": 43,
+          "warm": 1
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_prompt95": {
+            "hi": -0.2518603089321662,
+            "lo": -0.6528252678265877
+          },
+          "permutation_p_two_sided": 0.00024998750062496874,
+          "r": -0.46050905644503354
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": -0.415202653268264,
+            "lo": -0.7157590339576917
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "predictor": "delta_value_minus_standard",
+          "r": -0.5841943700197982,
+          "within_target_permutation_p_two_sided": 4.999750012499375e-05
+        },
+        "expected_label_counts": {
+          "cold": 27,
+          "cool": 5,
+          "hot": 18,
+          "warm": 8
+        },
+        "mean_entropy": 0.9430029052779605,
+        "side_accuracy": 0.25862068965517243,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": -0.004056324403278853,
+            "lo": -0.006966150453953787
+          },
+          "slope": -0.00551498319358436
+        }
+      },
+      "warnings": []
+    }
+  },
+  "schema_version": "gradable_behavior_recompute_v1",
+  "version": "v1_3_b"
+}

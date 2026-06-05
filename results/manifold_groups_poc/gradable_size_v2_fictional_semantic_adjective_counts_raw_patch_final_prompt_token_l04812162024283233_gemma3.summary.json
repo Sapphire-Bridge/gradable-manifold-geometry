@@ -1,0 +1,192 @@
+{
+  "layers": {
+    "0": {
+      "aligned_effect": {
+        "hi": -4.5185145468884214e-05,
+        "lo": -0.0002386024190516559,
+        "mean": -0.00014819567687813,
+        "n": 170
+      },
+      "direction_match_rate": 0.38823529411764707,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "12": {
+      "aligned_effect": {
+        "hi": 0.020074084737438637,
+        "lo": 0.01363133942782622,
+        "mean": 0.016858605236456818,
+        "n": 170
+      },
+      "direction_match_rate": 0.788235294117647,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "16": {
+      "aligned_effect": {
+        "hi": 0.11616055264610158,
+        "lo": 0.08118190428233574,
+        "mean": 0.09890821716219683,
+        "n": 170
+      },
+      "direction_match_rate": 0.7058823529411765,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "20": {
+      "aligned_effect": {
+        "hi": 0.2690132335310695,
+        "lo": 0.18670779128140777,
+        "mean": 0.22781676589561178,
+        "n": 170
+      },
+      "direction_match_rate": 0.7058823529411765,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "24": {
+      "aligned_effect": {
+        "hi": 0.31112569725733896,
+        "lo": 0.2175221416257346,
+        "mean": 0.26432637365694367,
+        "n": 170
+      },
+      "direction_match_rate": 0.7176470588235294,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "28": {
+      "aligned_effect": {
+        "hi": 0.31619745881530253,
+        "lo": 0.2192000557318586,
+        "mean": 0.267953905908202,
+        "n": 170
+      },
+      "direction_match_rate": 0.7176470588235294,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "32": {
+      "aligned_effect": {
+        "hi": 0.3341441167386721,
+        "lo": 0.23094207891133048,
+        "mean": 0.2841634282719897,
+        "n": 170
+      },
+      "direction_match_rate": 0.7176470588235294,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "33": {
+      "aligned_effect": {
+        "hi": 0.4628095146633451,
+        "lo": 0.33318702056545685,
+        "mean": 0.3988267212228716,
+        "n": 170
+      },
+      "direction_match_rate": 0.7647058823529411,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": -0.07601288230358044,
+        "lo": -0.11781787556433432,
+        "mean": -0.0963958210241423,
+        "n": 170
+      }
+    },
+    "4": {
+      "aligned_effect": {
+        "hi": 0.00019514647400241085,
+        "lo": -0.000774157523188823,
+        "mean": -0.00028968587433467554,
+        "n": 170
+      },
+      "direction_match_rate": 0.4588235294117647,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    },
+    "8": {
+      "aligned_effect": {
+        "hi": 0.004978587403688114,
+        "lo": 0.0023740471472909327,
+        "mean": 0.0036768479764732196,
+        "n": 170
+      },
+      "direction_match_rate": 0.6352941176470588,
+      "n": 170,
+      "sham_aligned_effect": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 170
+      }
+    }
+  },
+  "n_patched_rows": 1700,
+  "n_rows": 1700,
+  "n_skipped_rows": 0,
+  "run": {
+    "data_path": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_fictional_semantic_adjective_counts.jsonl",
+    "device": "mps",
+    "ended_at_utc": "2026-05-25T13:58:50.094330+00:00",
+    "git_commit": "ec69a45ef793ca8dfaad7a336e11f4bd42eb762e",
+    "layers": "0,4,8,12,16,20,24,28,32,33",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "normalize_by_length": true,
+    "patch_site": "final_prompt_token",
+    "require_token_id_match": true,
+    "started_at_utc": "2026-05-25T12:57:33.867424+00:00",
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 3676.196683583781
+  },
+  "schema_version": "gradable_size_raw_patch_v1"
+}

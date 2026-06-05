@@ -1,0 +1,45 @@
+{
+  "label_order": [
+    "young",
+    "youthful",
+    "mature",
+    "old"
+  ],
+  "mean_abs_observed_ordered_shift": 0.47274750642597557,
+  "mean_entropy": 0.6421860786778547,
+  "mean_expected_margin": -0.6546009745862749,
+  "n_pairs": 72,
+  "n_sides": 144,
+  "pair_both_correct_rate": 0.0,
+  "run": {
+    "data_path": "results/manifold_groups_poc/gradable_age_disamb_pairs_v1_2.jsonl",
+    "data_sha256": "74c2b9856639ea5bb859299f95e45deab1fb0d5d43ad9927c4436743f94e42d1",
+    "device": "mps",
+    "ended_at_utc": "2026-05-24T09:35:43.368468+00:00",
+    "git_commit": "ea7c414720de1ae44aabdd9b17685ad45506b7e1",
+    "logprobs_dtype": "float32",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "normalize_by_length": true,
+    "out_csv": "results/manifold_groups_poc/gradable_age_v1_2_behavior_gemma3.sides.csv",
+    "out_pairs_csv": "results/manifold_groups_poc/gradable_age_v1_2_behavior_gemma3.pairs.csv",
+    "out_summary": "results/manifold_groups_poc/gradable_age_v1_2_behavior_gemma3.summary.json",
+    "seed": 0,
+    "started_at_utc": "2026-05-24T09:33:36.537424+00:00",
+    "strict_finite": true,
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 126.82993404194713
+  },
+  "schema_version": "gradable_behavior_v1",
+  "shift_direction_match_rate": 0.8611111111111112,
+  "side_accuracy": 0.3402777777777778
+}

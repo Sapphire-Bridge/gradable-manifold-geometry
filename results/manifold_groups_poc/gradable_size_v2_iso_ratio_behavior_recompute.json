@@ -1,0 +1,153 @@
+{
+  "config": {
+    "bootstrap_B": 5000,
+    "ci": 0.95,
+    "permutation_B": 20000,
+    "seed": 0,
+    "side_dedup_key": "prompt_hash",
+    "strict": true
+  },
+  "domains": {
+    "size": {
+      "consistency_checks": {
+        "expected_labels_not_in_label_order": 0,
+        "missing_prob_columns": [],
+        "prob_mass_max": 1.0000000000000002,
+        "prob_mass_min": 0.9999999999999998
+      },
+      "counts": {
+        "n_pair_rows_recomputed": 23,
+        "n_pairs_jsonl": 23,
+        "n_side_rows": 46,
+        "n_unique_sides": 22,
+        "n_valid_direction_pairs": 23
+      },
+      "domain": "size",
+      "inputs": {
+        "data_jsonl": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_iso_ratio.jsonl",
+        "data_sha256": "cab36d33c599791e6cfb4ce454ea1a15f5711f60e978c1258b081f6677b88d3e",
+        "label_order": [
+          "tiny",
+          "small",
+          "large",
+          "huge"
+        ],
+        "pairs_csv": "results/manifold_groups_poc/gradable_size_v2_iso_ratio_behavior_gemma3.pairs.csv",
+        "pairs_sha256": "6f78044375ae88567d946a4c3801a8c6cb0c3fd213da31ea924deabc167f241a",
+        "predictor": "log_ratio",
+        "sides_csv": "results/manifold_groups_poc/gradable_size_v2_iso_ratio_behavior_gemma3.sides.csv",
+        "sides_sha256": "b5915f13665424594acd05f2432ca20003635bc506bcdec97d0027fae9c3ba7a"
+      },
+      "orientation": {
+        "expected_shift_sign_counts": {
+          "negative": 10,
+          "positive": 13
+        },
+        "is_orientation_balanced": true,
+        "observed_ordered_shift_sign_counts": {
+          "negative": 12,
+          "positive": 11
+        },
+        "predictor_shift_sign_counts": {
+          "negative": 10,
+          "positive": 13
+        }
+      },
+      "pair_metrics": {
+        "mean_abs_observed_ordered_shift": 0.2641329647844543,
+        "mean_aligned_observed_shift": 0.15522036964069202
+      },
+      "shift_direction_match": {
+        "binomial_p_two_sided_vs_0_5_naive": 0.03468966484069824,
+        "count": 17,
+        "n": 23,
+        "rate": 0.7391304347826086,
+        "wilson95_naive": {
+          "hi": 0.8745138395501366,
+          "lo": 0.5352999516257462
+        }
+      },
+      "side_metrics_expanded": {
+        "argmax_label_counts": {
+          "large": 13,
+          "small": 33
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_pair95": {
+            "hi": 0.7807780877231723,
+            "lo": 0.5696129700534954
+          },
+          "permutation_p_two_sided": 4.999750012499375e-05,
+          "r": 0.6775233323770692
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.7234680196331762,
+            "lo": 0.41754557451938074
+          },
+          "permutation_p_two_sided": 9.99950002499875e-05,
+          "predictor": "log_value_over_standard",
+          "r": 0.5674467446735861,
+          "within_target_permutation_p_two_sided": 0.0005499725013749313
+        },
+        "expected_label_counts": {
+          "huge": 14,
+          "large": 12,
+          "small": 9,
+          "tiny": 11
+        },
+        "mean_entropy": 0.9487806244616985,
+        "side_accuracy": 0.32608695652173914,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_pair95": {
+            "hi": 0.17209612006584535,
+            "lo": 0.07945541670655829
+          },
+          "slope": 0.12013384075822274
+        }
+      },
+      "side_metrics_unique": {
+        "argmax_label_counts": {
+          "large": 6,
+          "small": 16
+        },
+        "corr_ordered_score_vs_expected_label_index": {
+          "bootstrap_prompt95": {
+            "hi": 0.8901831899688994,
+            "lo": 0.533689226577901
+          },
+          "permutation_p_two_sided": 0.00014999250037498125,
+          "r": 0.7258837130452983
+        },
+        "corr_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.8118344843159327,
+            "lo": 0.37948500252367695
+          },
+          "permutation_p_two_sided": 0.0028998550072496373,
+          "predictor": "log_value_over_standard",
+          "r": 0.6068951402211684,
+          "within_target_permutation_p_two_sided": 0.030148492575371232
+        },
+        "expected_label_counts": {
+          "huge": 9,
+          "large": 4,
+          "small": 3,
+          "tiny": 6
+        },
+        "mean_entropy": 0.9668011918987026,
+        "side_accuracy": 0.22727272727272727,
+        "slope_ordered_score_vs_predictor": {
+          "bootstrap_prompt95": {
+            "hi": 0.17873354121053256,
+            "lo": 0.0573817361560434
+          },
+          "slope": 0.10780139112834657
+        }
+      },
+      "warnings": []
+    }
+  },
+  "schema_version": "gradable_behavior_recompute_v1",
+  "version": "v2_iso_ratio"
+}

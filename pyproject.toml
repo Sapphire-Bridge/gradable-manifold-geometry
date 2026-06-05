@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gradable-manifold-geometry"
+version = "0.1.0"
+description = "Gradable manifold geometry: theory-guided causal interpretability in Gemma-3-4B"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Felix Borck" }]
+dependencies = [
+    "torch>=2.5",
+    "transformers>=4.57",
+    "tokenizers>=0.22",
+    "numpy>=1.26,<2",
+    "matplotlib>=3.9",
+    "PyYAML>=6",
+]
+
+[tool.setuptools.packages.find]
+include = ["aom*"]

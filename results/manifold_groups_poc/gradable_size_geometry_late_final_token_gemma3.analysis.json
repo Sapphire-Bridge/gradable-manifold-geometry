@@ -1,0 +1,5028 @@
+{
+  "config": {
+    "layers": [
+      20,
+      24,
+      28,
+      32,
+      33
+    ],
+    "pca_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ridge_alpha": 10.0
+  },
+  "counts": {
+    "n_rows": 84,
+    "variants": [
+      "fictional_semantic_adjective_counts",
+      "iso_ratio_adjective_counts"
+    ]
+  },
+  "inputs": {
+    "metadata_csv": "results/manifold_groups_poc/\n  gradable_size_geometry_late_final_token_gemma3.metadata.csv",
+    "npz": "results/manifold_groups_poc/\n  gradable_size_geometry_late_final_token_gemma3.npz"
+  },
+  "layers": {
+    "20": {
+      "delta_alignment": {
+        "layer": 20,
+        "mean_pairwise_delta_cosine": 0.23761485074293767,
+        "n_deltas": 17,
+        "projection_corr_with_rho": 0.7671524858364324
+      },
+      "distance": {
+        "corr_distance_abs_delta_log_standard": 0.1297053001366688,
+        "corr_distance_abs_delta_log_value": 0.05365397262718817,
+        "corr_distance_abs_delta_rho": 0.09674514350068457,
+        "layer": 20,
+        "mean_distance_all": 68.76392550781713,
+        "mean_distance_same_rho": 56.53963542594283,
+        "mean_distance_same_standard": 44.73984998626183,
+        "mean_distance_same_value": 59.36719520892327,
+        "n_pairs": 3486,
+        "std_beta_abs_delta_log_standard": 0.0461625973393351,
+        "std_beta_abs_delta_log_value": 0.08704854606200542,
+        "std_beta_abs_delta_rho": 0.1273426836486593,
+        "std_beta_same_context": -0.20796283882873856,
+        "std_beta_same_variant": -0.8703499174100982
+      },
+      "layer": 20,
+      "metrics": [
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9763625140982153,
+          "r2": 0.9437933774311945,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": -0.12000784853554707,
+          "r2": -0.01888510272358479,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.8607439485612054,
+          "r2": 0.7323166898607787,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8657155838629941,
+          "r2": 0.7386874357750997,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.8826574410267995,
+          "r2": 0.7674577419584434,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.8842319253577193,
+          "r2": 0.7749293576473284,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.917078568650713,
+          "r2": 0.7952887079580241,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6892964103435547,
+          "r2": 0.46440016851269306,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7619792479194061,
+          "r2": 0.5639353478351734,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7577939046617655,
+          "r2": 0.5444491143669641,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8412162941079383,
+          "r2": 0.6550712052590237,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.8571513738564577,
+          "r2": 0.6737428369109957,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9888559246860436,
+          "r2": 0.9751171685220499,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8635363290786959,
+          "r2": 0.742688831445637,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8492055283699482,
+          "r2": 0.7209374848487823,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8411119868084109,
+          "r2": 0.7064680896070163,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8993913730901515,
+          "r2": 0.8083419284631108,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.896302535984019,
+          "r2": 0.8023439713696846,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.917078568650713,
+          "r2": 0.7952887079580241,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6892964103435547,
+          "r2": 0.46440016851269306,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7619792479194061,
+          "r2": 0.5639353478351734,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7577939046617655,
+          "r2": 0.5444491143669641,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8412162941079383,
+          "r2": 0.6550712052590237,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.8571513738564577,
+          "r2": 0.6737428369109957,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.6996740274691478,
+          "r2": -4.422829425231209,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.8406307247860298,
+          "r2": 0.6964602246902912,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.8366965819898351,
+          "r2": 0.6462677321731798,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.8245233397628516,
+          "r2": 0.6793954158494573,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.8507462671124258,
+          "r2": 0.14414516149389667,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.8578546215430516,
+          "r2": 0.16384479929583484,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8087327863682555,
+          "r2": 0.3650515609751487,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6505826846262859,
+          "r2": 0.1714592668517695,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6700650068017875,
+          "r2": 0.23943069969850383,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6616562708372733,
+          "r2": 0.2187706161861832,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6671328218201639,
+          "r2": 0.22414930139543554,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6899182488036604,
+          "r2": 0.2275919198417249,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9654201551611534,
+          "r2": 0.922091910889553,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.14584077389423536,
+          "r2": 0.0078074697343972765,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.8198898810474817,
+          "r2": 0.6658865432060115,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8232520522903077,
+          "r2": 0.6721283528877453,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.8414979241832552,
+          "r2": 0.7035671264078031,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.8500173645594664,
+          "r2": 0.7188864472446627,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9570773808432445,
+          "r2": 0.9070639462254819,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8759223407883879,
+          "r2": 0.6757418155647057,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8169580135329104,
+          "r2": 0.6651214111941276,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.867406720781099,
+          "r2": 0.7521805898230245,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8767671827451002,
+          "r2": 0.7651443179471304,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9298389827508188,
+          "r2": 0.8615960046822937,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9880103424417047,
+          "r2": 0.9758423719085432,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8088264241968195,
+          "r2": 0.6531651599335554,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.802103984838204,
+          "r2": 0.6427057948004997,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8461210102682227,
+          "r2": 0.7142704455215922,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.9036601325272859,
+          "r2": 0.8153026046792909,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9621489100271929,
+          "r2": 0.9237658579702649,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9570773808432445,
+          "r2": 0.9070639462254819,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8759223407883879,
+          "r2": 0.6757418155647057,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8169580135329104,
+          "r2": 0.6651214111941276,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.867406720781099,
+          "r2": 0.7521805898230245,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8767671827451002,
+          "r2": 0.7651443179471304,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9298389827508188,
+          "r2": 0.8615960046822937,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.9092896854418091,
+          "r2": 0.24072413286973326,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.8956101406646255,
+          "r2": 0.26204471094594606,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.894128230497353,
+          "r2": 0.2183709394025577,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.8727801399218437,
+          "r2": 0.6397014836919239,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.8790129439039689,
+          "r2": 0.12674065745509666,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.9051659613895345,
+          "r2": 0.4733601206255651,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9343660018281013,
+          "r2": -0.3624587836289619,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.9178346265824208,
+          "r2": 0.296837507471591,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.9305444575066248,
+          "r2": 0.04849157623320133,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.9244391192919037,
+          "r2": 0.2905026356569915,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.9273396647549618,
+          "r2": 0.08546473966396995,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9422699582136483,
+          "r2": 0.19131950296972977,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9671397657947547,
+          "r2": 0.9229713280781808,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.13374663986506022,
+          "r2": -0.0014647319726337482,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.8147250418170343,
+          "r2": 0.6608381111963729,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8149817000881862,
+          "r2": 0.6613197278513565,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.8346610779758366,
+          "r2": 0.6942722660166971,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.8457510476369423,
+          "r2": 0.7140976966743735,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9606003973323705,
+          "r2": 0.9147688523130981,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8699451422559861,
+          "r2": 0.668708309023184,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8121875186174693,
+          "r2": 0.6565042729333231,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8673835795937388,
+          "r2": 0.7519931277851194,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8781880933602175,
+          "r2": 0.7671350831543136,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9334994751235439,
+          "r2": 0.8685225342917096,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9878688783209738,
+          "r2": 0.9756221009565325,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8040913567545591,
+          "r2": 0.6455021203496574,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7978418178252312,
+          "r2": 0.6358508145940114,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8434315918501532,
+          "r2": 0.7098470733821599,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.904936570097525,
+          "r2": 0.8175400661696999,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9648121697254486,
+          "r2": 0.9289007496094093,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9606003973323705,
+          "r2": 0.9147688523130981,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.8699451422559861,
+          "r2": 0.668708309023184,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8121875186174693,
+          "r2": 0.6565042729333231,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8673835795937388,
+          "r2": 0.7519931277851194,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8781880933602175,
+          "r2": 0.7671350831543136,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9334994751235439,
+          "r2": 0.8685225342917096,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.9008506028843193,
+          "r2": 0.5053815128261585,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.8909841186940601,
+          "r2": 0.3050361889251404,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.8930081975614524,
+          "r2": 0.35561902621257924,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.8702133897160195,
+          "r2": 0.6847392786958679,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.8761302473992346,
+          "r2": 0.3110389137316033,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.904141130180186,
+          "r2": 0.5992987657772522,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.931774852737369,
+          "r2": -0.37011606454645385,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.9131528999139539,
+          "r2": 0.3108877297711483,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.9316291164927873,
+          "r2": 0.06471809921612126,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.9202553312688104,
+          "r2": 0.3125431698122031,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.9230884056988535,
+          "r2": 0.09458983605504434,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 20,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.9406907764733108,
+          "r2": 0.21558699930320402,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        }
+      ]
+    },
+    "24": {
+      "delta_alignment": {
+        "layer": 24,
+        "mean_pairwise_delta_cosine": 0.2208975382648982,
+        "n_deltas": 17,
+        "projection_corr_with_rho": 0.6269519704279105
+      },
+      "distance": {
+        "corr_distance_abs_delta_log_standard": 0.2903880603641753,
+        "corr_distance_abs_delta_log_value": 0.06256960882594241,
+        "corr_distance_abs_delta_rho": 0.14350276137692689,
+        "layer": 24,
+        "mean_distance_all": 70.09334372550586,
+        "mean_distance_same_rho": 63.62630728720808,
+        "mean_distance_same_standard": 49.68447064211835,
+        "mean_distance_same_value": 57.45212499339541,
+        "n_pairs": 3486,
+        "std_beta_abs_delta_log_standard": 0.26294607770709144,
+        "std_beta_abs_delta_log_value": 0.11828819883590483,
+        "std_beta_abs_delta_rho": 0.03393464953528552,
+        "std_beta_same_context": -0.184672128397942,
+        "std_beta_same_variant": -0.7998388514218849
+      },
+      "layer": 24,
+      "metrics": [
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9673962773780148,
+          "r2": 0.9040101029199883,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": -0.10738254583770278,
+          "r2": -0.019567004749006855,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.40734516818095456,
+          "r2": 0.15705335687526933,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8999939768535057,
+          "r2": 0.7741916395665474,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.8954875946079184,
+          "r2": 0.7707629876736408,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.8912679551820408,
+          "r2": 0.7671722920355228,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8561314330531881,
+          "r2": 0.7089708630922298,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.2544998702351227,
+          "r2": -0.520233526978843,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8390031397441218,
+          "r2": 0.5725763369677519,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7862406204615832,
+          "r2": 0.5593221015374217,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8030155064870491,
+          "r2": 0.582008025882873,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7937214501320929,
+          "r2": 0.5850678171858164,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9218945813127039,
+          "r2": 0.8429564860001304,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.08766803149327759,
+          "r2": -0.02291673786198567,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8470759630064384,
+          "r2": 0.7173349793905829,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8518440522114026,
+          "r2": 0.724815730283719,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8553631228254474,
+          "r2": 0.7311663067548876,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.864751670440209,
+          "r2": 0.7469772973058229,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8561314330531881,
+          "r2": 0.7089708630922298,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.2544998702351227,
+          "r2": -0.520233526978843,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8390031397441218,
+          "r2": 0.5725763369677519,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7862406204615832,
+          "r2": 0.5593221015374217,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.8030155064870491,
+          "r2": 0.582008025882873,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7937214501320929,
+          "r2": 0.5850678171858164,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.6151401087217034,
+          "r2": -1.3455315213999723,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.31828205016560857,
+          "r2": -0.0589135880500109,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.66735047451595,
+          "r2": -0.3439454740909673,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.6610381194781043,
+          "r2": -0.02028460280831168,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.6523271024966445,
+          "r2": 0.17813025669299198,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.6415071658447146,
+          "r2": 0.13325344735300126,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.3919455892036526,
+          "r2": 0.08622645990085043,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.5424755948221978,
+          "r2": 0.11338843580944369,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5519236760402674,
+          "r2": 0.11391283976557043,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5254964322183637,
+          "r2": 0.13425190379321073,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.4918962893623677,
+          "r2": 0.12214291914616726,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.5042908707356649,
+          "r2": 0.12835916465010055,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9686744465488489,
+          "r2": 0.9348353747395437,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.13592113019244578,
+          "r2": 0.0018764297363171867,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.19810170501573982,
+          "r2": 0.0019335402327089746,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.5841971684912174,
+          "r2": 0.33930537033366426,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.6048663000989171,
+          "r2": 0.35523071784901206,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.6119563088226031,
+          "r2": 0.36217714982853666,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9526724650282813,
+          "r2": 0.9042041599786191,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.03205819692204689,
+          "r2": -0.11518285148166885,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6210161618428878,
+          "r2": 0.3432727419517039,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6404941263257979,
+          "r2": 0.3978395075366813,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6435335799534582,
+          "r2": 0.4025846553154344,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6592948386754001,
+          "r2": 0.4287587905726058,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9852126056149532,
+          "r2": 0.9669130813807777,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.4041098894641818,
+          "r2": -0.14481421526571303,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.49790856356975893,
+          "r2": 0.24467334548402986,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6045741807117868,
+          "r2": 0.36301077440760154,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6435538024863262,
+          "r2": 0.40995268164658305,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6625451414866613,
+          "r2": 0.4349313405268209,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9526724650282813,
+          "r2": 0.9042041599786191,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.03205819692204689,
+          "r2": -0.11518285148166885,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6210161618428878,
+          "r2": 0.3432727419517039,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6404941263257979,
+          "r2": 0.3978395075366813,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6435335799534582,
+          "r2": 0.4025846553154344,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6592948386754001,
+          "r2": 0.4287587905726058,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8979072746107915,
+          "r2": 0.26365723094565985,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.559362988760496,
+          "r2": -0.34332940636512665,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.8520485113733276,
+          "r2": -1.1054248331156602,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.8904036851257248,
+          "r2": -0.2978424811746949,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.6227250969755794,
+          "r2": -0.13312366395074293,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.6449238652873842,
+          "r2": 0.17523131932202152,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8577507435122401,
+          "r2": 0.22740861926950906,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.7751119195354438,
+          "r2": 0.0524861237312384,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7259452824398048,
+          "r2": 0.024384527576821746,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6434104051652015,
+          "r2": -0.036026344712373204,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6436157122593076,
+          "r2": -0.026022006631897687,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6583461114957453,
+          "r2": 0.0462247698229854,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9698198544262117,
+          "r2": 0.9361948023780725,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.12771328869980814,
+          "r2": -0.0066462635449269225,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.2228182823525335,
+          "r2": 0.00950347610594926,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.5716598408048805,
+          "r2": 0.32556815497813074,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.5906990318676631,
+          "r2": 0.3385486250389985,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.5985045102910104,
+          "r2": 0.34563697849447916,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9613958521329773,
+          "r2": 0.9202875090125899,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.017740532149746822,
+          "r2": -0.08939282626778078,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.620057621510951,
+          "r2": 0.3422604930379861,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6415658795744452,
+          "r2": 0.39814698633440004,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6411115237252982,
+          "r2": 0.3989950217388062,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6590916683711221,
+          "r2": 0.4276928868782227,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9852778041349232,
+          "r2": 0.968249507501746,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.2519086934015309,
+          "r2": -0.1262891774285122,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.500087341318318,
+          "r2": 0.24721988194978894,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6060528609487165,
+          "r2": 0.3645474667785371,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.645194801110306,
+          "r2": 0.4118697197801299,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6643655819557465,
+          "r2": 0.4371759985011556,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9613958521329773,
+          "r2": 0.9202875090125899,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.017740532149746822,
+          "r2": -0.08939282626778078,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.620057621510951,
+          "r2": 0.3422604930379861,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6415658795744452,
+          "r2": 0.39814698633440004,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6411115237252982,
+          "r2": 0.3989950217388062,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6590916683711221,
+          "r2": 0.4276928868782227,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8900615523496327,
+          "r2": 0.5766960766935434,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.5594331319694876,
+          "r2": -0.22548946401589487,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.8632359518240872,
+          "r2": -0.8214178582713758,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.9020421762228604,
+          "r2": -0.13194069103978978,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.6304123246396421,
+          "r2": -0.008157937347977207,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.6496325348133873,
+          "r2": 0.2482386233105156,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8735400711278972,
+          "r2": 0.2668017071606419,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.7747569362652691,
+          "r2": 0.068184134150726,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7261115674185243,
+          "r2": 0.0406461445877071,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6460345373335832,
+          "r2": -0.017558915123088825,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6460020476286246,
+          "r2": -0.0052470598825353765,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 24,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6566993495113633,
+          "r2": 0.06581459671594725,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        }
+      ]
+    },
+    "28": {
+      "delta_alignment": {
+        "layer": 28,
+        "mean_pairwise_delta_cosine": 0.25315341131897146,
+        "n_deltas": 17,
+        "projection_corr_with_rho": 0.5763683134733316
+      },
+      "distance": {
+        "corr_distance_abs_delta_log_standard": 0.21123598306314728,
+        "corr_distance_abs_delta_log_value": 0.03749498599949012,
+        "corr_distance_abs_delta_rho": 0.0880318007073916,
+        "layer": 28,
+        "mean_distance_all": 69.85977802116473,
+        "mean_distance_same_rho": 65.72696489987779,
+        "mean_distance_same_standard": 46.67683120903358,
+        "mean_distance_same_value": 58.3150679527129,
+        "n_pairs": 3486,
+        "std_beta_abs_delta_log_standard": 0.147116554193887,
+        "std_beta_abs_delta_log_value": 0.09702412600396725,
+        "std_beta_abs_delta_rho": 0.04107873180012733,
+        "std_beta_same_context": -0.2697528597184945,
+        "std_beta_same_variant": -0.8061243352468993
+      },
+      "layer": 28,
+      "metrics": [
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9714641892678224,
+          "r2": 0.9187057475529947,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": -0.12864594463612358,
+          "r2": -0.016537615129072814,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.20587388916725133,
+          "r2": 0.012729603990637828,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8908777439228387,
+          "r2": 0.7648597873169345,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.894410320106858,
+          "r2": 0.7713865521815204,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.9036408076227184,
+          "r2": 0.7894557687708575,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7739150706955312,
+          "r2": 0.5897664189445861,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.5035287790621095,
+          "r2": -0.5494975953875594,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7474464865943637,
+          "r2": 0.4398662628111695,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7648138384210841,
+          "r2": 0.514009875312968,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.7289382318446908,
+          "r2": 0.5089240809017672,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7304534485212923,
+          "r2": 0.5107077746481854,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9266444093481324,
+          "r2": 0.8515024083744931,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.0072337358113971125,
+          "r2": -0.04424499860402298,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.845785979819062,
+          "r2": 0.7153075192387066,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.835478553939126,
+          "r2": 0.6978854322172808,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.859721359598303,
+          "r2": 0.7376149310372287,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.8609810444474604,
+          "r2": 0.7400157337043014,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7739150706955312,
+          "r2": 0.5897664189445861,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.5035287790621095,
+          "r2": -0.5494975953875594,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7474464865943637,
+          "r2": 0.4398662628111695,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7648138384210841,
+          "r2": 0.514009875312968,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.7289382318446908,
+          "r2": 0.5089240809017672,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7304534485212923,
+          "r2": 0.5107077746481854,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8117878779732394,
+          "r2": -0.3894436937663299,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.41921034939736634,
+          "r2": 0.017998590042596185,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.6778151340741427,
+          "r2": 0.37133206331959645,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.6545402175300967,
+          "r2": 0.33316735345231874,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.5947311500411298,
+          "r2": 0.30058216023064277,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.47347897824673385,
+          "r2": 0.21552533543094354,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.2972512116877597,
+          "r2": 0.053514800527494244,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.4760728022360997,
+          "r2": 0.07906798529307746,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.40168051778605285,
+          "r2": 0.057834716217754045,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.35391919998890814,
+          "r2": 0.06034912345794563,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.34097681781606076,
+          "r2": 0.04841581704622344,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.3428336374777012,
+          "r2": 0.054785323784576456,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.982605804117559,
+          "r2": 0.9614683028320241,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.13619277834341284,
+          "r2": 0.0024395378383950117,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.11378808703380079,
+          "r2": -0.0397493358056451,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.5516143288757884,
+          "r2": 0.30293614435657557,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.5929553818288409,
+          "r2": 0.3436592523787896,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.6621779695229114,
+          "r2": 0.4277464162739354,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9441673631851635,
+          "r2": 0.8895859938809522,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.28781134293229504,
+          "r2": -0.1576659189008156,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6673947277384797,
+          "r2": 0.3271442137623536,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6372548305868978,
+          "r2": 0.3922148122375635,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6789514186422425,
+          "r2": 0.4563954379305655,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6595925568287715,
+          "r2": 0.43311327089934526,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9875417657721188,
+          "r2": 0.9745176064957825,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.5192240326141991,
+          "r2": -0.13760160729760362,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5074756475563531,
+          "r2": 0.2543266521343217,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5488240436052326,
+          "r2": 0.3006090981281887,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.645931023432944,
+          "r2": 0.4087160663645344,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6554289637131402,
+          "r2": 0.4221081647710595,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9441673631851635,
+          "r2": 0.8895859938809522,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.28781134293229504,
+          "r2": -0.1576659189008156,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6673947277384797,
+          "r2": 0.3271442137623536,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6372548305868978,
+          "r2": 0.3922148122375635,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6789514186422425,
+          "r2": 0.4563954379305655,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6595925568287715,
+          "r2": 0.43311327089934526,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8858684802241219,
+          "r2": 0.29865297394964585,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.4886101538721725,
+          "r2": -0.44282815656396424,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5512516165101355,
+          "r2": -0.3484440000936544,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.47840847389371205,
+          "r2": 0.008684618354844909,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.5763486551590701,
+          "r2": 0.04459277453704147,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.686229459295716,
+          "r2": 0.2827270026050882,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.809603105279241,
+          "r2": -0.39065971467002436,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6477035661932512,
+          "r2": -0.08116702688839483,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5691836020844235,
+          "r2": -0.16757239795367584,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.43820839921087196,
+          "r2": -0.12629519551706903,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.4356272917983303,
+          "r2": -0.13727192541479383,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.4454871047219595,
+          "r2": -0.08126081873051905,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9832848792019053,
+          "r2": 0.9623310352085102,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.12588256753269905,
+          "r2": -0.006827166444195898,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.13189311142573693,
+          "r2": -0.042512949140738776,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.5387088790858768,
+          "r2": 0.29001934566839926,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.5784123588879833,
+          "r2": 0.3275451037812517,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.6489067137641522,
+          "r2": 0.41022142745260715,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9565287565049586,
+          "r2": 0.913593061515761,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.21719472944943782,
+          "r2": -0.14283419760141736,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.662359743958727,
+          "r2": 0.32754323291795306,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6408722022876967,
+          "r2": 0.39699126052146183,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6805459295598968,
+          "r2": 0.4575282822840615,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6592495854898734,
+          "r2": 0.4322363733413016,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9867102020571586,
+          "r2": 0.9732883348881389,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3335729990481416,
+          "r2": -0.12276917614077698,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5091345420991198,
+          "r2": 0.2563217482099083,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5532073468086268,
+          "r2": 0.3056613183804018,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6438247377472351,
+          "r2": 0.406309444985257,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6529469322673246,
+          "r2": 0.41918900785810365,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9565287565049586,
+          "r2": 0.913593061515761,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.21719472944943782,
+          "r2": -0.14283419760141736,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.662359743958727,
+          "r2": 0.32754323291795306,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6408722022876967,
+          "r2": 0.39699126052146183,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6805459295598968,
+          "r2": 0.4575282822840615,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6592495854898734,
+          "r2": 0.4322363733413016,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8705315347881885,
+          "r2": 0.3385772971303592,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.4859111422589806,
+          "r2": -0.31856204727371407,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5680711895514083,
+          "r2": -0.21975677167455232,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.49168969923117384,
+          "r2": 0.07290672431929268,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.5987855111776723,
+          "r2": 0.11452016119449993,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.696781171058043,
+          "r2": 0.3078725114389256,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8324297526748402,
+          "r2": -0.3679249142119534,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6486599482675118,
+          "r2": -0.06633959550986646,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5761612974003969,
+          "r2": -0.15049408519562357,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.44012745643066836,
+          "r2": -0.10817200139210281,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.4384631033170075,
+          "r2": -0.11866646619438725,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 28,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.4471541046691804,
+          "r2": -0.06328421758719172,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        }
+      ]
+    },
+    "32": {
+      "delta_alignment": {
+        "layer": 32,
+        "mean_pairwise_delta_cosine": 0.27251689070702184,
+        "n_deltas": 17,
+        "projection_corr_with_rho": 0.5329400205441505
+      },
+      "distance": {
+        "corr_distance_abs_delta_log_standard": 0.19991260462905355,
+        "corr_distance_abs_delta_log_value": 0.0026933913635135863,
+        "corr_distance_abs_delta_rho": 0.062466543253047485,
+        "layer": 32,
+        "mean_distance_all": 69.47635252976318,
+        "mean_distance_same_rho": 65.68605182775057,
+        "mean_distance_same_standard": 43.733425076727386,
+        "mean_distance_same_value": 59.495684995170215,
+        "n_pairs": 3486,
+        "std_beta_abs_delta_log_standard": 0.13150024998072482,
+        "std_beta_abs_delta_log_value": 0.06726125453022788,
+        "std_beta_abs_delta_rho": 0.031221865276158445,
+        "std_beta_same_context": -0.2963969888349749,
+        "std_beta_same_variant": -0.8081748202200456
+      },
+      "layer": 32,
+      "metrics": [
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.974280327721699,
+          "r2": 0.9236104746735965,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": -0.1263054791948116,
+          "r2": -0.0207399890391895,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.11093770434470832,
+          "r2": -0.03129153920508854,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8465173277934263,
+          "r2": 0.6874478279689589,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.8693088400402493,
+          "r2": 0.7314542349014584,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.873091118157902,
+          "r2": 0.7401491103348431,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7333873313850992,
+          "r2": 0.5332576043712214,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.6486805401365536,
+          "r2": -0.5947310212547605,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5832567813491899,
+          "r2": 0.25239908229236363,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6904492123452269,
+          "r2": 0.36778595707378203,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6154284642544012,
+          "r2": 0.3676667800096033,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6659519759547616,
+          "r2": 0.43085699921067644,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9238007191589747,
+          "r2": 0.8466129410120006,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.08150449044426489,
+          "r2": -0.06046006755104871,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.8150491129588694,
+          "r2": 0.6642577663221377,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.812922145280613,
+          "r2": 0.6605607503072797,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.805287543711897,
+          "r2": 0.6474889797621667,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.8754311877765304,
+          "r2": 0.7644572428111285,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7333873313850992,
+          "r2": 0.5332576043712214,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.6486805401365536,
+          "r2": -0.5947310212547605,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5832567813491899,
+          "r2": 0.25239908229236363,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.6904492123452269,
+          "r2": 0.36778595707378203,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6154284642544012,
+          "r2": 0.3676667800096033,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6659519759547616,
+          "r2": 0.43085699921067644,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8975618218793887,
+          "r2": -0.338786991476385,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": -0.02289425661527981,
+          "r2": -0.022702867070294452,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.6632775290288488,
+          "r2": 0.25502406129183863,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.5350705764751269,
+          "r2": 0.18729022103311144,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.5770668319913778,
+          "r2": -0.03306338843985679,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.5761698603300102,
+          "r2": 0.15316212303352061,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.2760059285802453,
+          "r2": -0.07579540731275802,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.3222065700827272,
+          "r2": 0.031519578072329746,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.41649422279808235,
+          "r2": 0.0034334892875720335,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.36413665487767943,
+          "r2": 0.04397832989957373,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.3423282027483791,
+          "r2": 0.038639864739610896,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.3382970217508685,
+          "r2": 0.03478941593074203,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.97876719924659,
+          "r2": 0.9526611044750023,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.1564913300717842,
+          "r2": 0.014925652048489835,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.09583033802275312,
+          "r2": -0.04374409757502695,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.44622802261052574,
+          "r2": 0.19887878879938692,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.5131319917781736,
+          "r2": 0.2627672088317964,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.5214315094553317,
+          "r2": 0.2716419457565217,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9574808366553816,
+          "r2": 0.9135163710243186,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3647173204778725,
+          "r2": -0.16468788534600276,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5068577252061125,
+          "r2": 0.15725181464754823,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5647963196189053,
+          "r2": 0.23375109583370135,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.49971252859986715,
+          "r2": 0.24358716018309157,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6134050875823304,
+          "r2": 0.3731835097366857,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9831556841967546,
+          "r2": 0.9663406668663516,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.6476767805899817,
+          "r2": -0.1310011910509179,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.36435430915920847,
+          "r2": 0.11967316960408048,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.3976505907299553,
+          "r2": 0.14642073317156235,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.44710242245997195,
+          "r2": 0.19570760333082016,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6708407694344843,
+          "r2": 0.4338222307740832,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9574808366553816,
+          "r2": 0.9135163710243186,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3647173204778725,
+          "r2": -0.16468788534600276,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5068577252061125,
+          "r2": 0.15725181464754823,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5647963196189053,
+          "r2": 0.23375109583370135,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.49971252859986715,
+          "r2": 0.24358716018309157,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6134050875823304,
+          "r2": 0.3731835097366857,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.892653783495919,
+          "r2": 0.6606350518383056,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.009272826453344008,
+          "r2": -0.5650762072673017,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5281036044988531,
+          "r2": -0.44274758691111793,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.3835543611788168,
+          "r2": -0.12151701061922493,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.4738063436488757,
+          "r2": 0.1672834314000281,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.6610564640418233,
+          "r2": 0.322485026239521,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8381642478224712,
+          "r2": 0.20584759695089638,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.5401851293798751,
+          "r2": -0.14267970921041284,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6234682429400922,
+          "r2": -0.21466220790974,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.45963872085219526,
+          "r2": 0.031212028802032554,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.43084597062644625,
+          "r2": 0.016310711160543057,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.4410909528679623,
+          "r2": 0.007024033939733609,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9794087903624865,
+          "r2": 0.9538907246319834,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.1422399328257517,
+          "r2": 0.005303961705080185,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.10445145671459716,
+          "r2": -0.05331538362247623,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.43092508466942503,
+          "r2": 0.1842589344613449,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.49959070271551603,
+          "r2": 0.24957474582627626,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.5067490563464662,
+          "r2": 0.25541919783878586,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9681949719014599,
+          "r2": 0.9333358689312735,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3227939052070137,
+          "r2": -0.15592613205268657,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.4921733539804355,
+          "r2": 0.1574571623996015,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5660688674215332,
+          "r2": 0.23784433068826372,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.5091604808727477,
+          "r2": 0.25473023950554086,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6108008358829501,
+          "r2": 0.36964041090757516,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9829984099356737,
+          "r2": 0.9661287841223367,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.44123473484861314,
+          "r2": -0.11961234336605941,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.3666610767632525,
+          "r2": 0.12209002443895589,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.40468649076109686,
+          "r2": 0.15323663056495662,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.44984473696663646,
+          "r2": 0.19861467277957667,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6641393737666519,
+          "r2": 0.42618900461600784,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9681949719014599,
+          "r2": 0.9333358689312735,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3227939052070137,
+          "r2": -0.15592613205268657,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.4921733539804355,
+          "r2": 0.1574571623996015,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5660688674215332,
+          "r2": 0.23784433068826372,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.5091604808727477,
+          "r2": 0.25473023950554086,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6108008358829501,
+          "r2": 0.36964041090757516,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8818468344818259,
+          "r2": 0.6878960846153014,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": 0.007883941343467085,
+          "r2": -0.4834574858908345,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5331759959752487,
+          "r2": -0.36896763538999955,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.38426966521164635,
+          "r2": -0.07553132889376712,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.4703437628648607,
+          "r2": 0.15479478131994306,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.6717882824419683,
+          "r2": 0.3202931984713032,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8566293889964979,
+          "r2": 0.24566634964341671,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.5179797920979091,
+          "r2": -0.13161621899769282,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.61805424317211,
+          "r2": -0.1990237317109369,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.4367312316286721,
+          "r2": 0.04153064650435401,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.40744985199168055,
+          "r2": 0.026349730474656607,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 32,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.4191442308576117,
+          "r2": 0.01794664752750663,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        }
+      ]
+    },
+    "33": {
+      "delta_alignment": {
+        "layer": 33,
+        "mean_pairwise_delta_cosine": 0.27487913567811423,
+        "n_deltas": 17,
+        "projection_corr_with_rho": 0.5617828123534945
+      },
+      "distance": {
+        "corr_distance_abs_delta_log_standard": 0.19923525187068217,
+        "corr_distance_abs_delta_log_value": -0.004322882188760848,
+        "corr_distance_abs_delta_rho": 0.059818887347063004,
+        "layer": 33,
+        "mean_distance_all": 69.4169285860717,
+        "mean_distance_same_rho": 65.66047255124693,
+        "mean_distance_same_standard": 42.76478490280831,
+        "mean_distance_same_value": 59.908389253032276,
+        "n_pairs": 3486,
+        "std_beta_abs_delta_log_standard": 0.12374643299363414,
+        "std_beta_abs_delta_log_value": 0.06025661521627949,
+        "std_beta_abs_delta_rho": 0.032862539852800354,
+        "std_beta_same_context": -0.3114947159845662,
+        "std_beta_same_variant": -0.8044638235328949
+      },
+      "layer": 33,
+      "metrics": [
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9743470930866402,
+          "r2": 0.9226565036389758,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": -0.1280420272627618,
+          "r2": -0.018811692017071113,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.10296540836753908,
+          "r2": -0.03325897300210756,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.8294263006987043,
+          "r2": 0.6605930455990425,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.87131685536369,
+          "r2": 0.7356205193658416,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.8787355758620682,
+          "r2": 0.7492373571430018,
+          "split": "hash_even_odd",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7304324168180384,
+          "r2": 0.5297349653194785,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.6847139386841804,
+          "r2": -0.5842400291069354,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6605441976417156,
+          "r2": 0.30630993335190226,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7238259315786185,
+          "r2": 0.3914367111056809,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6459912926881697,
+          "r2": 0.40196264832454476,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6946369381671236,
+          "r2": 0.47008021767950336,
+          "split": "leave_comparison_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9224982418518095,
+          "r2": 0.8440199397536075,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.1473901807011256,
+          "r2": -0.06821339429994078,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.800454159822345,
+          "r2": 0.6405489492125479,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.8060567847290452,
+          "r2": 0.6492706958348,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.79960985926165,
+          "r2": 0.6379325195485699,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.8830894346832155,
+          "r2": 0.77786577684387,
+          "split": "leave_value_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.7304324168180384,
+          "r2": 0.5297349653194785,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.6847139386841804,
+          "r2": -0.5842400291069354,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.6605441976417156,
+          "r2": 0.30630993335190226,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.7238259315786185,
+          "r2": 0.3914367111056809,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.6459912926881697,
+          "r2": 0.40196264832454476,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6946369381671236,
+          "r2": 0.47008021767950336,
+          "split": "leave_standard_out",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.878035185488884,
+          "r2": -2.191079204099136,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": -0.1532949560872772,
+          "r2": -0.028146640625238195,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.6896419750625831,
+          "r2": 0.20820129105882967,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.6195294392863229,
+          "r2": 0.26714086152022487,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.634217736171359,
+          "r2": 0.010221678234992204,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.7193955919789956,
+          "r2": 0.3482789336659051,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.3825089616686591,
+          "r2": 0.004735310597805409,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.41749259677355877,
+          "r2": 0.044438249681855946,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.5403225701211221,
+          "r2": 0.03394303330691173,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.36945333343380343,
+          "r2": 0.05043277291611292,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.40103001871609456,
+          "r2": 0.05893458105455607,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.38048579328039395,
+          "r2": 0.053876201644417865,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "rho"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9781715609805213,
+          "r2": 0.9513465765791905,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.1576683657433973,
+          "r2": 0.013904039647476774,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.09935467751596863,
+          "r2": -0.04171198909612639,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.4211572862037241,
+          "r2": 0.17660179559525124,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.505035216533324,
+          "r2": 0.2540794064565123,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.5333443439907056,
+          "r2": 0.2843022142150613,
+          "split": "hash_even_odd",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9629221752371455,
+          "r2": 0.9225635031619805,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3720353083134766,
+          "r2": -0.16105411495920618,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.48585800604924795,
+          "r2": 0.15492239953390385,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5502357837396752,
+          "r2": 0.21703311005472148,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.49927335104528786,
+          "r2": 0.23820215667960454,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6783179633384577,
+          "r2": 0.45789177173484763,
+          "split": "leave_comparison_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9837829269153455,
+          "r2": 0.9674839378614967,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.7031025987103614,
+          "r2": -0.1313761203937016,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.33618500408076835,
+          "r2": 0.09657745874602874,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.36426415691036024,
+          "r2": 0.11559080948596501,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.43422747866525285,
+          "r2": 0.1826955068948063,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7383843723132543,
+          "r2": 0.522726314138528,
+          "split": "leave_value_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9629221752371455,
+          "r2": 0.9225635031619805,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.3720353083134766,
+          "r2": -0.16105411495920618,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.48585800604924795,
+          "r2": 0.15492239953390385,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5502357837396752,
+          "r2": 0.21703311005472148,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.49927335104528786,
+          "r2": 0.23820215667960454,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6783179633384577,
+          "r2": 0.45789177173484763,
+          "split": "leave_standard_out",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.887248596208918,
+          "r2": 0.5467307047039134,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": -0.07285946738693079,
+          "r2": -0.5659229082645694,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5117116159390726,
+          "r2": -0.5630740207853853,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.45240872107262453,
+          "r2": -0.20112138207743957,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.510881507566097,
+          "r2": 0.18049315316733994,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.7287674047302781,
+          "r2": 0.45204475835015345,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8620891556715699,
+          "r2": 0.37970405043716593,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6318086557400131,
+          "r2": -0.11737967537376814,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7422273928111948,
+          "r2": -0.1669726863972396,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.4430459097222723,
+          "r2": 0.03733623460985758,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.47503398901705857,
+          "r2": 0.06133558084277335,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.47519431847826893,
+          "r2": 0.06165691372272308,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "ordered_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 42,
+          "r": 0.9785106085884936,
+          "r2": 0.9520183712756269,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 42,
+          "r": 0.14409123010327887,
+          "r2": 0.004130961189011351,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 42,
+          "r": 0.10658041373391096,
+          "r2": -0.05183740928164027,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 42,
+          "r": 0.40606379465482395,
+          "r2": 0.16181041565396515,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 42,
+          "r": 0.4922421940234759,
+          "r2": 0.24110890790246486,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 42,
+          "r": 0.5189525242576086,
+          "r2": 0.26762363276273016,
+          "split": "hash_even_odd",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.97238072090225,
+          "r2": 0.9404385608036894,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.34080115721429105,
+          "r2": -0.1548465950783824,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.47324927658455906,
+          "r2": 0.1548562404257524,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5501337760417765,
+          "r2": 0.22049338945706587,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.5078201814566875,
+          "r2": 0.24927256823554989,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6792296789201534,
+          "r2": 0.45859300510330336,
+          "split": "leave_comparison_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.9834332208620443,
+          "r2": 0.9669056109808944,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.5055768664308197,
+          "r2": -0.12142965665081173,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.3388337663972858,
+          "r2": 0.09921002770592735,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.3710790092531992,
+          "r2": 0.12185779276444808,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.43749041590280646,
+          "r2": 0.18604531485918852,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.7316172790577926,
+          "r2": 0.5141289001672364,
+          "split": "leave_value_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.97238072090225,
+          "r2": 0.9404385608036894,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": -0.34080115721429105,
+          "r2": -0.1548465950783824,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.47324927658455906,
+          "r2": 0.1548562404257524,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.5501337760417765,
+          "r2": 0.22049338945706587,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.5078201814566875,
+          "r2": 0.24927256823554989,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.6792296789201534,
+          "r2": 0.45859300510330336,
+          "split": "leave_standard_out",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 22,
+          "r": 0.8734921201633188,
+          "r2": 0.5944843209135993,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 22,
+          "r": -0.07325272316550487,
+          "r2": -0.48116009992374953,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 22,
+          "r": 0.5129674474146985,
+          "r2": -0.47151392790970426,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 22,
+          "r": 0.45482157882360913,
+          "r2": -0.13789392762332953,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 22,
+          "r": 0.5094761834666288,
+          "r2": 0.16551834751377636,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 22,
+          "r": 0.7331502422301828,
+          "r2": 0.44752199258866066,
+          "split": "fictional_semantic_adjective_counts_to_iso_ratio_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "ridge_full",
+          "n_test": 62,
+          "r": 0.8763561535338791,
+          "r2": 0.41395031561752815,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca1_ridge",
+          "n_test": 62,
+          "r": 0.6096998592066067,
+          "r2": -0.10628434276113663,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca2_ridge",
+          "n_test": 62,
+          "r": 0.7310599174572326,
+          "r2": -0.1519810794433829,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca3_ridge",
+          "n_test": 62,
+          "r": 0.4210225725303676,
+          "r2": 0.04698589453007118,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca4_ridge",
+          "n_test": 62,
+          "r": 0.451599196557347,
+          "r2": 0.06931808711218324,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        },
+        {
+          "layer": 33,
+          "model": "pca5_ridge",
+          "n_test": 62,
+          "r": 0.45165583276899635,
+          "r2": 0.06942522980979815,
+          "split": "iso_ratio_adjective_counts_to_fictional_semantic_adjective_counts",
+          "target": "signed_score"
+        }
+      ]
+    }
+  },
+  "schema_version": "gradable_size_geometry_analysis_v1"
+}

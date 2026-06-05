@@ -1,0 +1,45 @@
+{
+  "label_order": [
+    "tiny",
+    "small",
+    "large",
+    "huge"
+  ],
+  "mean_abs_observed_ordered_shift": 0.41904901340362805,
+  "mean_entropy": 0.6455373572122668,
+  "mean_expected_margin": -1.9290984237895292,
+  "n_pairs": 85,
+  "n_sides": 170,
+  "pair_both_correct_rate": 0.03529411764705882,
+  "run": {
+    "data_path": "results/manifold_groups_poc/gradable_size_disamb_pairs_v2_fictional_semantic_adjective_counts.jsonl",
+    "data_sha256": "e44cd13ef30e42e9db3151d4640b441f9e8a03217b5c2666e6fd51060485d058",
+    "device": "mps",
+    "ended_at_utc": "2026-05-25T12:22:26.165364+00:00",
+    "git_commit": "ec69a45ef793ca8dfaad7a336e11f4bd42eb762e",
+    "logprobs_dtype": "float32",
+    "model_name_or_path": "google/gemma-3-4b-pt",
+    "model_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "normalize_by_length": true,
+    "out_csv": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_gemma3.sides.csv",
+    "out_pairs_csv": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_gemma3.pairs.csv",
+    "out_summary": "results/manifold_groups_poc/gradable_size_v2_fictional_semantic_adjective_counts_behavior_gemma3.summary.json",
+    "seed": 0,
+    "started_at_utc": "2026-05-25T12:19:37.499937+00:00",
+    "strict_finite": true,
+    "tokenizer_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+    "torch_dtype": "float32",
+    "versions": {
+      "numpy": "1.26.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.11.15",
+      "tokenizers": "0.22.1",
+      "torch": "2.5.1",
+      "transformers": "4.57.3"
+    },
+    "wall_time_sec": 168.6637474577874
+  },
+  "schema_version": "gradable_behavior_v1",
+  "shift_direction_match_rate": 0.7176470588235294,
+  "side_accuracy": 0.3235294117647059
+}
