@@ -3,6 +3,7 @@ set -euo pipefail
 
 export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -26,7 +27,7 @@ DATA_PATH="results/manifold_groups_poc/gradable_size_disamb_pairs_v2_${EVAL_VARI
 OUT_PREFIX_RAW="${OUT_PREFIX:-results/manifold_groups_poc/gradable_size_low_rank_patch_train_${TRAIN_VARIANT}_eval_${EVAL_VARIANT}_l${LAYERS//,/}_gemma3}"
 OUT_PREFIX="$(printf '%s' "${OUT_PREFIX_RAW}" | tr -d '\r\n' | sed 's#/  *#/#g')"
 
-python scripts/patch_gradable_size_low_rank.py \
+"${PYTHON}" scripts/patch_gradable_size_low_rank.py \
   --model_name_or_path "${MODEL_NAME_OR_PATH}" \
   --revision "${REVISION}" \
   --tokenizer_revision "${TOKENIZER_REVISION}" \

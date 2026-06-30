@@ -3,6 +3,7 @@ set -euo pipefail
 
 export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -21,7 +22,7 @@ else
   OUT="results/manifold_groups_poc/gradable_size_${VERSION}_raw_patch_${PATCH_SITE}_l${LAYERS//,/}_gemma3"
 fi
 
-python scripts/patch_gradable_size_raw.py \
+"${PYTHON}" scripts/patch_gradable_size_raw.py \
   --model_name_or_path "${MODEL_NAME_OR_PATH}" \
   --revision "${REVISION}" \
   --tokenizer_revision "${TOKENIZER_REVISION}" \

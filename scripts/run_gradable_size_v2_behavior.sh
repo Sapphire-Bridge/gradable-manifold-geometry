@@ -3,6 +3,7 @@ set -euo pipefail
 
 export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -37,9 +38,9 @@ run_variant() {
   local data_path="results/manifold_groups_poc/gradable_size_disamb_pairs_${version}.jsonl"
   local out="results/manifold_groups_poc/gradable_size_${version}_behavior_gemma3"
 
-  python scripts/generate_gradable_size_v2.py --variant "${variant}" --readout_family "${READOUT_FAMILY}"
+  "${PYTHON}" scripts/generate_gradable_size_v2.py --variant "${variant}" --readout_family "${READOUT_FAMILY}"
 
-  python scripts/score_gradable_predicates.py \
+  "${PYTHON}" scripts/score_gradable_predicates.py \
     --model_name_or_path "${MODEL_NAME_OR_PATH}" \
     --revision "${REVISION}" \
     --tokenizer_revision "${TOKENIZER_REVISION}" \
@@ -52,7 +53,7 @@ run_variant() {
     --out_summary "${out}.summary.json" \
     --overwrite
 
-  python scripts/recompute_gradable_behavior_metrics.py \
+  "${PYTHON}" scripts/recompute_gradable_behavior_metrics.py \
     --version "${version}" \
     --domains "size" \
     --size_label_order "${label_order}" \
@@ -68,7 +69,7 @@ for variant in ${VARIANTS}; do
   run_variant "${variant}"
 done
 
-python scripts/summarize_gradable_size_v2.py \
+"${PYTHON}" scripts/summarize_gradable_size_v2.py \
   --out_md "results/manifold_groups_poc/gradable_size_v2_behavior_lockin.summary.md" \
   --out_json "results/manifold_groups_poc/gradable_size_v2_behavior_lockin.summary.json"
 

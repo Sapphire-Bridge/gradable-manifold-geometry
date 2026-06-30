@@ -9,6 +9,7 @@ export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -40,7 +41,7 @@ generate_one () {
   local domain="$1"
   local paraphrase="$2"
   local log="$LOG_DIR/gen_${domain}_${paraphrase}_${STAMP}.log"
-  python scripts/generate_gradable_v1_3.py --domain "$domain" --paraphrase "$paraphrase" >"$log" 2>&1
+  "${PYTHON}" scripts/generate_gradable_v1_3.py --domain "$domain" --paraphrase "$paraphrase" >"$log" 2>&1
   return $?
 }
 
@@ -54,7 +55,7 @@ score_one () {
   local labels="$(label_order_for "$domain")"
 
   echo "  [score] ${domain}/${paraphrase} start $(date -u +%H:%M:%SZ)" | tee -a "$TOP_LOG"
-  python scripts/score_gradable_predicates.py \
+  "${PYTHON}" scripts/score_gradable_predicates.py \
     --model_name_or_path "$MODEL_NAME_OR_PATH" \
     --revision "$REVISION" \
     --tokenizer_revision "$TOKENIZER_REVISION" \
@@ -77,7 +78,7 @@ recompute_paraphrase () {
   local out_base="results/manifold_groups_poc/gradable_${version}_behavior_recompute"
   local log="$LOG_DIR/recompute_${paraphrase}_${STAMP}.log"
   echo "  [recompute] ${paraphrase} start $(date -u +%H:%M:%SZ)" | tee -a "$TOP_LOG"
-  python scripts/recompute_gradable_behavior_metrics.py \
+  "${PYTHON}" scripts/recompute_gradable_behavior_metrics.py \
     --version "$version" \
     --bootstrap_B "$RECOMPUTE_BOOTSTRAP_B" \
     --permutation_B "$RECOMPUTE_PERMUTATION_B" \

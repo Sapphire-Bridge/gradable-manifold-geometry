@@ -44,7 +44,7 @@ results/manifold_groups_poc/gradable_v1_2_behavior_recompute.pairs.csv
 After the scoring files exist, recompute without re-running the model:
 
 ```bash
-python scripts/recompute_gradable_behavior_metrics.py \
+python3 scripts/recompute_gradable_behavior_metrics.py \
   --version "v1_2" \
   --bootstrap_B 5000 \
   --permutation_B 20000 \

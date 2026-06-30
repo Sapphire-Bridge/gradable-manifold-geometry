@@ -1,46 +1,72 @@
-# Gradable Manifold Groups: Bierwisch Gradability as a Mechanistic Target
+# Gradable Manifold Geometry: Semantics-Guided Causal Localization
 
-*Can linguistic theory pick which activation geometry is worth steering? Here it does — causally — in Gemma-3-4B.*
+*Formal semantics specifies what behavior to test; causal patching finds the
+internal control structure that carries it.*
 
-**Result.** Gradable-adjective semantics says "large" is judged relative to a
-comparison standard, not absolute size. Used to design the contrast, that idea
-locates a **rank-5 layer-20 residual-stream subspace** in Gemma-3-4B that
-**causally shifts** standard-relative size judgments and **transfers
-bidirectionally** across two independent prompt families. The geometry is
-usable in interventions, not just readable from activations.
+**In plain terms.** Some adjectives, like "large," only make sense relative to
+a comparison class: a 3 cm object can be large for one kind of thing and small
+for another. This project asks whether Gemma-3-4B has an internal
+representation of "large relative to what?" In this setup, the answer is yes:
+the repo finds a small internal subspace that changes the model's judgments
+when patched. The theory did not hand us the dial. It told us what dial to look
+for; the experiment found a real internal control, and it was more distributed
+than the simple `value/standard` ratio.
 
-**Why it matters.** Before searching for circuits, features, or steering
-directions, you have to know *which* behavioral variable — and *which*
-activation geometry — is even worth explaining. This shows how to make that
-choice principled (driven by semantic theory) instead of exploratory, then
-verifies it causally. It is the question upstream of manifold steering: which
-geometry is the right one to steer along.
+**Result.** Bierwisch-style gradable semantics says "large" is judged relative
+to a comparison standard, not absolute size. I use that theory to build a
+standard-relative size-judgment assay in Gemma-3-4B, then run a competitive
+causal-localization test over candidate residual-stream geometries. The result
+is not that theory directly predicts the exact activation geometry. The
+winning object in this setup is not the clean one-dimensional
+`rho = log(value/standard)` direction: it is a **rank-5 layer-20
+residual-stream subspace** that **causally shifts** standard-relative size
+judgments and **transfers bidirectionally** across two independent prompt
+families.
+
+**Why it matters.** The repo separates three things that are easy to conflate:
+the behavioral variable worth explaining, the activation geometry that makes it
+readable, and the intervention geometry that actually moves behavior. Semantics
+specifies the target; PCA, supervised, explicit-variable, and random bases
+compete; projected-delta patching decides which basis causally controls
+held-out judgments. This is the question upstream of circuit search and
+manifold steering: which behaviorally validated target is worth explaining?
+
+**Claim boundary.** This is a one-model, one-readout, size-domain result in
+`google/gemma-3-4b-pt` at revision `cc012e0`. It is not a universal
+gradability manifold, not a geodesic manifold-steering result, and not a
+rho-only mechanism. The stronger finding is that formal semantics can specify a
+causal target while the model implements that target through a distributed,
+standard-sensitive low-rank geometry.
 
 For a self-contained write-up (one-page note plus technical appendix), see
 [`docs/GRADABLE_MANIFOLD_ONE_PAGER.md`](docs/GRADABLE_MANIFOLD_ONE_PAGER.md).
+For the evidence discipline used to decide what would and would not count as a
+manifold-like mechanistic result, start with
+[`results/manifold_groups_poc/manifold_evidence_criteria.md`](results/manifold_groups_poc/manifold_evidence_criteria.md).
 
 This work is a companion to the [SAE/CLT writeback limitation paper](https://github.com/Sapphire-Bridge/sae-writeback-limitation/blob/main/paper/sae_writeback_limitation_short_paper.md). That paper is published first; this repository is
 released after it.
 
 ## Abstract
 
-This project asks whether linguistic theory can help identify the right thing to
-look for inside a language model. The case study is deliberately simple: when a
-model judges whether something is "large," the relevant variable is not the
-object's absolute size but its size relative to a comparison standard — a 3 cm
-object can be large for one class and small for another. Using that idea, the
-project builds controlled standard-relative size-judgment prompts and tests
-whether Gemma-3-4B (revision `cc012e0`) contains an activation geometry that
-causally supports this behavior. (Behavior is read out as prompt-deduplicated
-ordered probability over the labels `tiny < small < large < huge`, not as
-argmax accuracy.)
+This project asks whether linguistic theory can specify a behavioral target
+precisely enough to guide mechanistic search inside a language model. The case
+study is deliberately simple: when a model judges whether something is "large,"
+the relevant variable is not the object's absolute size but its size relative
+to a comparison standard — a 3 cm object can be large for one class and small
+for another. Using that idea, the project builds controlled standard-relative
+size-judgment prompts and tests whether Gemma-3-4B (revision `cc012e0`)
+contains an activation geometry that causally supports this behavior. (Behavior
+is read out as prompt-deduplicated ordered probability over the labels
+`tiny < small < large < huge`, not as argmax accuracy.)
 
-The main result is that it does. In this one model and prompt/readout regime, a
-small layer-20 residual-stream subspace shifts standard-relative size judgments:
-a rank-5 PCA subspace learned from one size-prompt family transfers to a
-held-out size-prompt family, and the reverse direction works too. That makes the
-result stronger than a probe or correlation — the geometry is not only readable
-from activations but usable in interventions that move behavior.
+The main result is a bounded causal localization. In this one model and
+prompt/readout regime, a small layer-20 residual-stream subspace shifts
+standard-relative size judgments: a rank-5 PCA subspace learned from one
+size-prompt family transfers to a held-out size-prompt family, and the reverse
+direction works too. That makes the result stronger than a probe or
+correlation — the geometry is not only readable from activations but usable in
+interventions that move behavior.
 
 The interpretation is deliberately narrow. Cross-domain tests with temperature
 and age show partial overlap with size, but no single universal gradability
@@ -85,7 +111,23 @@ explicit-variable controls should fail if the effect is not just a separable
 
 So the result is not "theory proves the manifold." The result is narrower:
 theory asks the right intervention question and exposes a precise mismatch
-between clean semantic structure and the model's learned geometry.
+between clean semantic structure and the model's learned geometry. In the same
+sense as the companion SAE/CLT writeback-limitation work, the tempting
+structural proxy is not enough; the causal assay has to decide what actually
+moves held-out behavior.
+
+## Relation to representation engineering and causal abstraction
+
+This repo sits between representation engineering, activation steering,
+activation patching, and causal abstraction. Like activation-addition and RepE
+work, it studies low-dimensional directions or subspaces that can change model
+behavior at inference time. Unlike generic steering, the candidate behavioral
+coordinate is specified by a linguistic theory before the intervention search.
+Like activation patching and distributed-alignment-style causal abstraction, it
+uses interventions to test whether a high-level variable is carried by a
+distributed representation. Unlike SAE or circuit-tracing work, it does not yet
+identify the feature group or circuit that implements the subspace; it supplies
+a behaviorally validated target for that later explanation.
 
 ## Relation to manifold steering
 
@@ -159,7 +201,7 @@ the canonical display strings still appear in this README and the one-pager, so
 the prose cannot silently drift from the data:
 
 ```bash
-python scripts/check_gradable_claim_numbers.py
+python3 scripts/check_gradable_claim_numbers.py
 ```
 
 Convenience targets are in the `Makefile`:
