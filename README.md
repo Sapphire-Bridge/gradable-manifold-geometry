@@ -23,6 +23,16 @@ residual-stream subspace** that **causally shifts** standard-relative size
 judgments and **transfers bidirectionally** across two independent prompt
 families.
 
+**What the comparison does and does not show.** The L20 rank-5 PCA subspace is
+the strongest held-out causal intervention in this release, but the comparison
+is not "5D geometry versus all 1D controls." A behavior-derived 1D
+`ordered_score` direction also moves judgments, while the theory-named scalar
+`rho = log(value/standard)` stays weak even rank-matched (a rank-1 PCA
+direction already beats it). The result is therefore not that all
+one-dimensional controls fail, but that the clean semantic ratio is not the
+causal mechanism. `aligned_effect` is the primary, more robust readout here;
+`recovery_vs_full` is a secondary, noisier ratio.
+
 **Why it matters.** The repo separates three things that are easy to conflate:
 the behavioral variable worth explaining, the activation geometry that makes it
 readable, and the intervention geometry that actually moves behavior. Semantics
