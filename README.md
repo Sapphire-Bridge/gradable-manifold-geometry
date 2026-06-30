@@ -23,6 +23,14 @@ residual-stream subspace** that **causally shifts** standard-relative size
 judgments and **transfers bidirectionally** across two independent prompt
 families.
 
+**Why it matters.** The repo separates three things that are easy to conflate:
+the behavioral variable worth explaining, the activation geometry that makes it
+readable, and the intervention geometry that actually moves behavior. Semantics
+specifies the target; PCA, supervised, explicit-variable, and random bases
+compete; projected-delta patching decides which basis causally controls
+held-out judgments. This is the question upstream of circuit search and
+manifold steering: which behaviorally validated target is worth explaining?
+
 **What the comparison does and does not show.** The L20 rank-5 PCA subspace is
 the strongest held-out causal intervention in this release, but the comparison
 is not "5D geometry versus all 1D controls." A behavior-derived 1D
@@ -32,14 +40,6 @@ direction already beats it). The result is therefore not that all
 one-dimensional controls fail, but that the clean semantic ratio is not the
 causal mechanism. `aligned_effect` is the primary, more robust readout here;
 `recovery_vs_full` is a secondary, noisier ratio.
-
-**Why it matters.** The repo separates three things that are easy to conflate:
-the behavioral variable worth explaining, the activation geometry that makes it
-readable, and the intervention geometry that actually moves behavior. Semantics
-specifies the target; PCA, supervised, explicit-variable, and random bases
-compete; projected-delta patching decides which basis causally controls
-held-out judgments. This is the question upstream of circuit search and
-manifold steering: which behaviorally validated target is worth explaining?
 
 **Claim boundary.** This is a one-model, one-readout, size-domain result in
 `google/gemma-3-4b-pt` at revision `cc012e0`. It is not a universal
