@@ -3,6 +3,12 @@
 *Formal semantics specifies the behavioral target; causal patching tests which
 activation geometry actually carries it.*
 
+**In plain terms.** In these prompts, Gemma-3-4B judges whether something is
+"big" or "small" by comparing it to a yardstick, not just by reading its raw
+size. This repo finds a small internal subspace that can move those judgments,
+shows that changing it changes the model's answers, and shows that the causal
+control is not the obvious one-dimensional `value/standard` dial.
+
 **Result.** Bierwisch-style gradable semantics says "large" is judged relative
 to a comparison standard, not absolute size. I use that theory to build a
 standard-relative size-judgment assay in Gemma-3-4B, then run a competitive
