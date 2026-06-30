@@ -3,6 +3,7 @@ set -euo pipefail
 
 export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -50,7 +51,7 @@ fi
 if [ "${DRY_RUN}" = "1" ]; then
   echo "DRY_RUN: skipping control regeneration; reusing existing ${CONTROL_PREFIX}.csv"
 else
-  python scripts/make_gradable_cross_domain_delta_rho_controls.py "${MATCH_ARGS[@]}"
+  "${PYTHON}" scripts/make_gradable_cross_domain_delta_rho_controls.py "${MATCH_ARGS[@]}"
 fi
 
 PATCH_ARGS=(
@@ -87,7 +88,7 @@ if [ "${DRY_RUN}" = "1" ]; then
   PATCH_ARGS+=(--dry_run)
 fi
 
-python scripts/patch_gradable_cross_domain_subspace_transfer.py "${PATCH_ARGS[@]}"
+"${PYTHON}" scripts/patch_gradable_cross_domain_subspace_transfer.py "${PATCH_ARGS[@]}"
 
 if [ "${DRY_RUN}" = "1" ]; then
   echo "Dry run complete."

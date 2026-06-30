@@ -159,7 +159,7 @@ the canonical display strings still appear in this README and the one-pager, so
 the prose cannot silently drift from the data:
 
 ```bash
-python scripts/check_gradable_claim_numbers.py
+python3 scripts/check_gradable_claim_numbers.py
 ```
 
 Convenience targets are in the `Makefile`:

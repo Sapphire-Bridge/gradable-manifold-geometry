@@ -3,6 +3,7 @@ set -euo pipefail
 
 export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 
+PYTHON="${PYTHON:-python3}"
 MODEL_NAME_OR_PATH="${MODEL_NAME_OR_PATH:-google/gemma-3-4b-pt}"
 REVISION="${REVISION:-cc012e0a6d0787b4adcc0fa2c4da74402494554d}"
 TOKENIZER_REVISION="${TOKENIZER_REVISION:-$REVISION}"
@@ -15,7 +16,7 @@ PCA_RANKS="${PCA_RANKS:-1,2,3,4,5}"
 OUT_PREFIX_RAW="${OUT_PREFIX:-results/manifold_groups_poc/gradable_size_geometry_late_final_token_gemma3}"
 OUT_PREFIX="$(printf '%s' "${OUT_PREFIX_RAW}" | tr -d '\r\n' | sed 's#/  *#/#g')"
 
-python scripts/extract_gradable_size_activations.py \
+"${PYTHON}" scripts/extract_gradable_size_activations.py \
   --model_name_or_path "${MODEL_NAME_OR_PATH}" \
   --revision "${REVISION}" \
   --tokenizer_revision "${TOKENIZER_REVISION}" \
@@ -27,7 +28,7 @@ python scripts/extract_gradable_size_activations.py \
   --out_prefix "${OUT_PREFIX}" \
   --overwrite
 
-python scripts/analyze_gradable_size_geometry.py \
+"${PYTHON}" scripts/analyze_gradable_size_geometry.py \
   --npz "${OUT_PREFIX}.npz" \
   --metadata_csv "${OUT_PREFIX}.metadata.csv" \
   --layers "${LAYERS}" \
