@@ -1,18 +1,22 @@
 # Gradable Manifold Geometry: Semantics-Guided Causal Localization
 
-*Formal semantics specifies the behavioral target; causal patching tests which
-activation geometry actually carries it.*
+*Formal semantics specifies what behavior to test; causal patching finds the
+internal control structure that carries it.*
 
-**In plain terms.** In these prompts, Gemma-3-4B judges whether something is
-"big" or "small" by comparing it to a yardstick, not just by reading its raw
-size. This repo finds a small internal subspace that can move those judgments,
-shows that changing it changes the model's answers, and shows that the causal
-control is not the obvious one-dimensional `value/standard` dial.
+**In plain terms.** Some adjectives, like "large," only make sense relative to
+a comparison class: a 3 cm object can be large for one kind of thing and small
+for another. This project asks whether Gemma-3-4B has an internal
+representation of "large relative to what?" In this setup, the answer is yes:
+the repo finds a small internal subspace that changes the model's judgments
+when patched. The theory did not hand us the dial. It told us what dial to look
+for; the experiment found a real internal control, and it was more distributed
+than the simple `value/standard` ratio.
 
 **Result.** Bierwisch-style gradable semantics says "large" is judged relative
 to a comparison standard, not absolute size. I use that theory to build a
 standard-relative size-judgment assay in Gemma-3-4B, then run a competitive
-causal-localization test over candidate residual-stream geometries. The
+causal-localization test over candidate residual-stream geometries. The result
+is not that theory directly predicts the exact activation geometry. The
 winning object in this setup is not the clean one-dimensional
 `rho = log(value/standard)` direction: it is a **rank-5 layer-20
 residual-stream subspace** that **causally shifts** standard-relative size
