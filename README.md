@@ -26,11 +26,10 @@ mechanism. The stronger result is a **rank-5 layer-20 residual-stream subspace**
 that **causally shifts** held-out standard-relative size judgments - primary
 readout `aligned_effect +0.162 [0.110, 0.209]`; secondary and noisier
 `recovery_vs_full 0.860 [0.595, 1.146]` - and **transfers bidirectionally**
-across two independent prompt families. Whether this donor-conditioned patch
-subspace is the *same* object as the fixed-vector steering actuator, or a
-distinct causal role, is deferred to a **Carrier-vs-Actuator Audit** (see
-below); the strong "this subspace is *the* control geometry" claim is gated on
-that audit.
+across two independent prompt families. This donor-conditioned patch subspace is
+*not* the same object as the strongest fixed-vector steering actuator: a matched
+follow-up (the **Carrier-vs-Actuator Audit** below) shows they are two distinct
+causal roles, so the repo does not claim a single "the control geometry."
 
 **Why it matters.** The repo separates three things that are easy to conflate:
 the behavioral variable worth explaining, the activation geometry that makes it
@@ -57,21 +56,31 @@ rho-only mechanism. The stronger finding is that formal semantics can specify a
 causal target while the model implements that target through a distributed,
 standard-sensitive low-rank geometry.
 
-**Carrier-vs-Actuator Audit (in progress).** Two flagship analyses in this
-release currently point at partly different objects: donor-conditioned
-*patching* is carried by the rank-5 PCA subspace (the explicit `standard`
-direction is near zero), whereas fixed-vector *steering* is led by the 1-D
-`standard` direction (stronger than the PCA-delta-mean direction, with `value`
-steering in the opposite sign). A follow-up audit tests whether the patch
-subspace and the steering directions identify the *same* causal geometry
-measured two ways, or *distinct causal roles* - a low-rank carrier of
-pair-specific standard-relative deltas versus a global calibration actuator.
-Until it resolves, the numbers above stand as reported but the strong
-"single causal control geometry" reading is held back. **Accountability
-commitment:** the audit's outcome will be reported here regardless of
-direction - including a deflationary result that weakens or corrects the
-current headline. Working notes are kept in a separate private workspace only
-to avoid publishing misreadable intermediate states, not to filter outcomes.
+**Carrier-vs-Actuator Audit (resolved: two distinct causal roles).** A matched
+follow-up (same L20, same splits) settles the tension between the two regimes.
+The regimes are compared only WITHIN each, since patch `aligned_effect` and
+steering `slope/alpha` are different units.
+
+- *Patching* (donor-conditioned) is carried by the distributed **rank-5 PCA
+  subspace** (`aligned_effect` +0.162). No one-dimensional direction reconstructs
+  it: `standard` is inert (~0), and so are BOTH its component inside the carrier
+  subspace (`standard_in_U`) and its residual outside it (`standard_out_U`). Even
+  the 1-D high-minus-low-rho mean direction (`delta_mean`) is inert (~0) despite
+  lying almost entirely inside the carrier subspace - so the carrier is
+  pair-conditioned and genuinely low-rank, not a single averaged direction.
+- *Steering* (fixed-vector) is led by the 1-D `standard` direction
+  (`slope/alpha` +0.044), stronger than the PCA-delta-mean direction (+0.029),
+  with `value` steering in the opposite sign.
+
+The result separates two causal roles rather than one control geometry: a
+distributed low-rank **carrier** of pair-specific standard-relative shifts (found
+by patching) and a separate one-dimensional comparison-standard **actuator**
+(found by steering). A setup-artifact explanation is ruled out: under the matched
+setup `standard` still patches to ~0. This mirrors the companion SAE/CLT result -
+the most steerable or readable direction need not be the causal carrier. (As
+committed, this outcome is reported here regardless of direction; the audit ran
+in a separate private workspace only to avoid publishing misreadable
+intermediate states.)
 
 For a self-contained write-up (one-page note plus technical appendix), see
 [`docs/GRADABLE_MANIFOLD_ONE_PAGER.md`](docs/GRADABLE_MANIFOLD_ONE_PAGER.md).
