@@ -1,27 +1,36 @@
-# Gradable Manifold Geometry: Semantics-Guided Causal Localization
+# Semantics-Guided Causal Localization of Standard-Relative Judgment
 
 *Formal semantics specifies what behavior to test; causal patching finds the
 internal control structure that carries it.*
+
+*(Repository slug: `gradable-manifold-geometry` - the original project name. The
+current claim is framed more narrowly as semantics-guided causal localization,
+not a strict manifold result.)*
 
 **In plain terms.** Some adjectives, like "large," only make sense relative to
 a comparison class: a 3 cm object can be large for one kind of thing and small
 for another. This project asks whether Gemma-3-4B has an internal
 representation of "large relative to what?" In this setup, the answer is yes:
 the repo finds a small internal subspace that changes the model's judgments
-when patched. The theory did not hand us the dial. It told us what dial to look
-for; the experiment found a real internal control, and it was more distributed
-than the simple `value/standard` ratio.
+when patched. The theory did not hand us the dial. It specified the behavioral contrast and
+the controls; the experiment found a real intervention target, and it was more
+distributed than the simple `value/standard` ratio.
 
 **Result.** Bierwisch-style gradable semantics says "large" is judged relative
 to a comparison standard, not absolute size. I use that theory to build a
 standard-relative size-judgment assay in Gemma-3-4B, then run a competitive
 causal-localization test over candidate residual-stream geometries. The result
-is not that theory directly predicts the exact activation geometry. The
-winning object in this setup is not the clean one-dimensional
-`rho = log(value/standard)` direction: it is a **rank-5 layer-20
-residual-stream subspace** that **causally shifts** standard-relative size
-judgments and **transfers bidirectionally** across two independent prompt
-families.
+is not that theory directly predicts the exact activation geometry: the clean
+one-dimensional `rho = log(value/standard)` direction is **not** the causal
+mechanism. The stronger result is a **rank-5 layer-20 residual-stream subspace**
+that **causally shifts** held-out standard-relative size judgments - primary
+readout `aligned_effect +0.162 [0.110, 0.209]`; secondary and noisier
+`recovery_vs_full 0.860 [0.595, 1.146]` - and **transfers bidirectionally**
+across two independent prompt families. Whether this donor-conditioned patch
+subspace is the *same* object as the fixed-vector steering actuator, or a
+distinct causal role, is deferred to a **Carrier-vs-Actuator Audit** (see
+below); the strong "this subspace is *the* control geometry" claim is gated on
+that audit.
 
 **Why it matters.** The repo separates three things that are easy to conflate:
 the behavioral variable worth explaining, the activation geometry that makes it
@@ -48,6 +57,22 @@ rho-only mechanism. The stronger finding is that formal semantics can specify a
 causal target while the model implements that target through a distributed,
 standard-sensitive low-rank geometry.
 
+**Carrier-vs-Actuator Audit (in progress).** Two flagship analyses in this
+release currently point at partly different objects: donor-conditioned
+*patching* is carried by the rank-5 PCA subspace (the explicit `standard`
+direction is near zero), whereas fixed-vector *steering* is led by the 1-D
+`standard` direction (stronger than the PCA-delta-mean direction, with `value`
+steering in the opposite sign). A follow-up audit tests whether the patch
+subspace and the steering directions identify the *same* causal geometry
+measured two ways, or *distinct causal roles* - a low-rank carrier of
+pair-specific standard-relative deltas versus a global calibration actuator.
+Until it resolves, the numbers above stand as reported but the strong
+"single causal control geometry" reading is held back. **Accountability
+commitment:** the audit's outcome will be reported here regardless of
+direction - including a deflationary result that weakens or corrects the
+current headline. Working notes are kept in a separate private workspace only
+to avoid publishing misreadable intermediate states, not to filter outcomes.
+
 For a self-contained write-up (one-page note plus technical appendix), see
 [`docs/GRADABLE_MANIFOLD_ONE_PAGER.md`](docs/GRADABLE_MANIFOLD_ONE_PAGER.md).
 For the evidence discipline used to decide what would and would not count as a
@@ -63,7 +88,7 @@ This project asks whether linguistic theory can specify a behavioral target
 precisely enough to guide mechanistic search inside a language model. The case
 study is deliberately simple: when a model judges whether something is "large,"
 the relevant variable is not the object's absolute size but its size relative
-to a comparison standard — a 3 cm object can be large for one class and small
+to a comparison standard - a 3 cm object can be large for one class and small
 for another. Using that idea, the project builds controlled standard-relative
 size-judgment prompts and tests whether Gemma-3-4B (revision `cc012e0`)
 contains an activation geometry that causally supports this behavior. (Behavior
@@ -75,14 +100,14 @@ prompt/readout regime, a small layer-20 residual-stream subspace shifts
 standard-relative size judgments: a rank-5 PCA subspace learned from one
 size-prompt family transfers to a held-out size-prompt family, and the reverse
 direction works too. That makes the result stronger than a probe or
-correlation — the geometry is not only readable from activations but usable in
+correlation - the geometry is not only readable from activations but usable in
 interventions that move behavior.
 
 The interpretation is deliberately narrow. Cross-domain tests with temperature
 and age show partial overlap with size, but no single universal gradability
 basis. A steering test shows the discovered size geometry can be used for local
 linear control; in that fixed-vector steering regime the comparison-standard
-direction is an even stronger local actuator — yet in the more controlled
+direction is an even stronger local actuator - yet in the more controlled
 donor-conditioned patching, the explicit `value`, `standard`, and
 `value`+`standard` controls are all near zero. So the claim is not "we found the
 gradability manifold" or "`rho` is the mechanism." The claim is narrower:
@@ -262,7 +287,7 @@ Short pitch:
 ## Start here
 
 - `results/manifold_groups_poc/gradable_predicates_bierwisch_note.md` -
-  extended narrative research note (supporting; not claim-gated — the README and the one-pager are the pinned claim surface).
+  extended narrative research note (supporting; not claim-gated - the README and the one-pager are the pinned claim surface).
 - `results/manifold_groups_poc/gradable_size_v2_runbook.md` - operational
   runbook with commands, gates, and result interpretation.
 - `results/manifold_groups_poc/gradable_cross_domain_low_rank_control_l20_r5_gemma3.md` -
