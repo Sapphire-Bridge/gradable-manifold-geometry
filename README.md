@@ -7,6 +7,19 @@ internal control structure that carries it.*
 current claim is framed more narrowly as semantics-guided causal localization,
 not a strict manifold result.)*
 
+**Status: a system-level protocol, not an established system.** This repo is the
+flagship study of a *semantics-guided causal audit protocol*: formal semantics
+specifies the behavioral contrast and adversarial controls; matched causal
+interventions then separate a readable **proxy**, a donor-conditioned **carrier**,
+and a fixed-vector **actuator**. "System-level protocol" means it has repeatable
+gates, roles, metrics, competing arms, and pre-committed decision rules - one
+strong flagship result (this repo) plus one preregistered adversarial validation
+study on a second phenomenon (position-sensitive monotonicity). It is not yet an
+established system: that would require holding across several phenomena, models,
+and external users. The claim is deliberately *not* "semantic vector
+localization" - the protocol's value is that every outcome is interpreted in
+advance and a bottom-up pipeline is allowed to win honestly.
+
 **In plain terms.** Some adjectives, like "large," only make sense relative to
 a comparison class: a 3 cm object can be large for one kind of thing and small
 for another. This project asks whether Gemma-3-4B has an internal
