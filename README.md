@@ -20,6 +20,22 @@ and external users. The claim is deliberately *not* "semantic vector
 localization" - the protocol's value is that every outcome is interpreted in
 advance and a bottom-up pipeline is allowed to win honestly.
 
+**Second preregistered study (position-sensitive monotonicity): a preregistered
+NULL.** In the monotonicity validation study, both the semantics-specified carrier
+and a strong blind PCA carrier causally moved held-out entailment judgments far
+above random/sham on a sealed disjoint-lexeme test - but their confidence
+intervals overlapped (semantics `aligned_effect +0.980 [0.841, 1.121]` vs blind
+`+0.944 [0.814, 1.087]`; random `+0.002`). Per the preregistration this is a
+**NULL: no evidence of differential value** for semantics-guided carrier
+selection in this phenomenon. A real, distributed causal carrier exists and
+generalizes; semantics simply does not out-localize a strong bottom-up baseline
+here. This is a successful audit outcome, not a failed experiment: the system
+accepted its falsifier and prevented an overclaim. Net position across the two
+studies - *formal semantics defines what must be tested, catches false positives,
+and separates causal roles; whether it beats bottom-up localization is empirical
+and phenomenon-dependent.* (Gradability = positive flagship; monotonicity =
+adversarial validation showing the protocol is not built so semantics must win.)
+
 **In plain terms.** Some adjectives, like "large," only make sense relative to
 a comparison class: a 3 cm object can be large for one kind of thing and small
 for another. This project asks whether Gemma-3-4B has an internal
