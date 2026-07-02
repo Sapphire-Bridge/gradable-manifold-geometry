@@ -9,6 +9,8 @@ Model gemma-3-4b-pt @ cc012e0, L20, donor-conditioned projected-delta patch,
 `gold_aligned_effect` primary, clustered bootstrap. Validation split, small n,
 provisional. Carriers only (no steering).
 
+![Cross-domain scalar carrier transfer](figures/scalar_transfer_3domain.svg)
+
 ## In-domain (all three under one pipeline)
 Each domain passes a frozen behavioral gate (size acc/FLIP 1.000; speed 0.882/0.850;
 mid-range weight 0.875/0.950) and has a real donor-conditioned L20 carrier (calibration
