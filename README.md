@@ -14,9 +14,10 @@ interventions then separate a readable **proxy**, a donor-conditioned **carrier*
 and a fixed-vector **actuator**. "System-level protocol" means it has repeatable
 gates, roles, metrics, competing arms, and pre-committed decision rules - one
 strong flagship result (this repo) plus one preregistered adversarial validation
-study on a second phenomenon (position-sensitive monotonicity). It is not yet an
-established system: that would require holding across several phenomena, models,
-and external users. The claim is deliberately *not* "semantic vector
+study on a second phenomenon (position-sensitive monotonicity) and one scoped
+cross-domain audit (standard-relative scalar carriers in speed and weight). It is
+not yet an established system: that would require holding across several phenomena,
+models, and external users. The claim is deliberately *not* "semantic vector
 localization" - the protocol's value is that every outcome is interpreted in
 advance and a bottom-up pipeline is allowed to win honestly.
 
@@ -35,6 +36,24 @@ studies - *formal semantics defines what must be tested, catches false positives
 and separates causal roles; whether it beats bottom-up localization is empirical
 and phenomenon-dependent.* (Gradability = positive flagship; monotonicity =
 adversarial validation showing the protocol is not built so semantics must win.)
+
+**Third study (cross-domain scalar carriers): shared geometry is not a shared
+mechanism.** A scoped cross-domain audit extends the flagship's role structure to
+two further scalar adjective domains, speed and (mid-range) weight, under the same
+pinned model and L20 readout. Both domains pass a frozen behavioral gate and have
+real donor-conditioned causal carriers (calibrated patches; clean random/sham
+controls). Their carrier subspaces overlap geometrically far above a random-subspace
+baseline - most along the interpretable value/standard directions. But causal
+cross-patching, using one domain's carrier to intervene on the other, largely
+collapses to the random baseline: the shared geometry does not causally transfer.
+The result supports **domain-specific scalar carriers with shared but causally
+insufficient geometric components** - geometry alone (principal angles / projection
+overlap) would have suggested a shared mechanism; only the causal test rejects it.
+This is deliberately provisional: two domains (speed primary, mid-range weight
+provisional), one model, L20, validation split, small n; size is not yet re-extracted
+under this pipeline, and the fixed-vector actuator arm was inconclusive and is
+deferred. It reinforces the net position - a readable/geometric proxy is not the
+causal carrier, and only intervention decides.
 
 **In plain terms.** Some adjectives, like "large," only make sense relative to
 a comparison class: a 3 cm object can be large for one kind of thing and small
