@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="880" height="470" rx="16" fill="#ffffff" stroke="#e6e9f0"/>
+  <defs>
+    <marker id="m" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5b6478"/></marker>
+    <marker id="mr" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#c0392b"/></marker>
+  </defs>
+
+  <text x="30" y="42" font-size="20" font-weight="700" fill="#14183a">Refusing an answer is not the same as removing the concept</text>
+
+  <!-- ================= LEFT: suppress the output ================= -->
+  <rect x="24" y="64" width="406" height="316" rx="14" fill="#fdf6f4" stroke="#e6c3ba"/>
+  <text x="44" y="92" font-size="14.5" font-weight="700" fill="#8a2f18">Suppress the output  ·  today</text>
+  <text x="44" y="112" font-size="12" fill="#a5644f">actuator — hides the answer</text>
+
+  <!-- model with concept still inside -->
+  <rect x="44" y="132" width="188" height="150" rx="11" fill="#ffffff" stroke="#c9b0a8"/>
+  <text x="138" y="154" font-size="11.5" fill="#8891a3" text-anchor="middle">MODEL</text>
+  <path d="M138 176 L166 224 L110 224 Z" fill="#e4573f"/>
+  <text x="138" y="217" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">!</text>
+  <text x="138" y="248" font-size="12.5" font-weight="700" fill="#8a2f18" text-anchor="middle">“harmful” concept</text>
+  <text x="138" y="266" font-size="12" fill="#a5533a" text-anchor="middle">still inside</text>
+
+  <!-- output -> refusal shield -->
+  <line x1="232" y1="200" x2="286" y2="200" stroke="#5b6478" stroke-width="2.5" marker-end="url(#m)"/>
+  <rect x="290" y="182" width="118" height="38" rx="8" fill="#3560c4"/>
+  <text x="349" y="206" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="middle">REFUSED ✓</text>
+
+  <!-- jailbreak goes around, concept still reachable -->
+  <path d="M150 236 C 210 320, 330 300, 388 236" stroke="#c0392b" stroke-width="2.5" fill="none" stroke-dasharray="5 4" marker-end="url(#mr)"/>
+  <text x="230" y="330" font-size="12.5" font-weight="700" fill="#c0392b">jailbreak → still reachable</text>
+
+  <!-- ================= RIGHT: remove the mechanism ================= -->
+  <rect x="450" y="64" width="406" height="316" rx="14" fill="#f1f8f4" stroke="#bfe0cc"/>
+  <text x="470" y="92" font-size="14.5" font-weight="700" fill="#155e39">Remove the mechanism  ·  the goal</text>
+  <text x="470" y="112" font-size="12" fill="#3f7a5a">carrier — removes the concept</text>
+
+  <!-- model with concept removed -->
+  <rect x="470" y="132" width="188" height="150" rx="11" fill="#ffffff" stroke="#a9d2ba"/>
+  <text x="564" y="154" font-size="11.5" fill="#8891a3" text-anchor="middle">MODEL</text>
+  <circle cx="564" cy="205" r="26" fill="none" stroke="#9aa3b2" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="548" y1="189" x2="580" y2="221" stroke="#9aa3b2" stroke-width="2"/><line x1="580" y1="189" x2="548" y2="221" stroke="#9aa3b2" stroke-width="2"/>
+  <text x="564" y="256" font-size="12.5" font-weight="700" fill="#155e39" text-anchor="middle">concept removed</text>
+
+  <!-- output -> safe -->
+  <line x1="658" y1="200" x2="712" y2="200" stroke="#5b6478" stroke-width="2.5" marker-end="url(#m)"/>
+  <rect x="716" y="182" width="110" height="38" rx="8" fill="#1f8a54"/>
+  <text x="771" y="206" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="middle">SAFE ✓</text>
+
+  <text x="564" y="330" font-size="12.5" font-weight="700" fill="#2f7a54" text-anchor="middle">nothing to jailbreak</text>
+
+  <!-- caption -->
+  <rect x="24" y="398" width="832" height="52" rx="10" fill="#14183a"/>
+  <text x="440" y="420" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="middle">A refusal hides the answer — the concept stays, so a jailbreak can still reach it.</text>
+  <text x="440" y="440" font-size="12.5" fill="#c7cde0" text-anchor="middle">Testing the output tells you the mask is on. Only testing the mechanism tells you the concept is gone.</text>
+</svg>

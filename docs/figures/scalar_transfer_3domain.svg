@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="720" height="440" rx="16" fill="#ffffff" stroke="#e6e9f0"/>
+  <text x="36" y="48" font-size="21" font-weight="700" fill="#14183a">Do scalar domains share a causal carrier?</text>
+  <text x="36" y="72" font-size="13.5" fill="#5b6478">Cross-patching one domain's carrier into another (gemma-3-4b-pt, L20).</text>
+
+  <!-- edges -->
+  <line x1="333" y1="160" x2="232" y2="300" stroke="#1f8a54" stroke-width="3.5"/>
+  <line x1="387" y1="160" x2="488" y2="300" stroke="#1f8a54" stroke-width="3.5"/>
+  <line x1="290" y1="322" x2="430" y2="322" stroke="#b3bccb" stroke-width="2.5" stroke-dasharray="8 6"/>
+
+  <!-- edge tags -->
+  <text x="228" y="232" font-size="12.5" fill="#1f6b47" text-anchor="middle" transform="rotate(-54 228 232)">transfers</text>
+  <text x="492" y="232" font-size="12.5" fill="#1f6b47" text-anchor="middle" transform="rotate(54 492 232)">transfers</text>
+  <text x="360" y="312" font-size="12.5" fill="#8891a3" text-anchor="middle">does not transfer</text>
+
+  <!-- nodes -->
+  <rect x="300" y="112" width="120" height="50" rx="12" fill="#e9f5ee" stroke="#1f8a54" stroke-width="2"/>
+  <text x="360" y="143" font-size="17" font-weight="700" fill="#155e39" text-anchor="middle">SIZE</text>
+
+  <rect x="140" y="300" width="120" height="50" rx="12" fill="#eef3fc" stroke="#3560c4" stroke-width="2"/>
+  <text x="200" y="331" font-size="16" font-weight="700" fill="#1c2f66" text-anchor="middle">SPEED</text>
+
+  <rect x="460" y="300" width="120" height="50" rx="12" fill="#eef3fc" stroke="#3560c4" stroke-width="2"/>
+  <text x="520" y="331" font-size="16" font-weight="700" fill="#1c2f66" text-anchor="middle">WEIGHT</text>
+
+  <!-- takeaway -->
+  <rect x="36" y="372" width="648" height="46" rx="10" fill="#f7f8fa" stroke="#e6e9f0"/>
+  <text x="360" y="394" font-size="14" font-weight="700" fill="#14183a" text-anchor="middle">A partially shared carrier, centered on size — not a universal scalar manifold.</text>
+  <text x="360" y="411" font-size="11" fill="#8891a3" text-anchor="middle">Shared part is the interpretable value-vs-standard axis. Provisional: one model, L20, small validation set.</text>
+</svg>
