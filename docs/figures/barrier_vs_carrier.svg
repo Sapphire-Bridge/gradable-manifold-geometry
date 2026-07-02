@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="880" height="500" rx="16" fill="#ffffff" stroke="#e6e9f0"/>
+  <defs>
+    <marker id="grey" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#8891a3"/></marker>
+    <marker id="red" markerWidth="11" markerHeight="11" refX="7" refY="4.2" orient="auto"><path d="M0 0 L9 4.2 L0 8.4 z" fill="#c0392b"/></marker>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4ee08a" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#1f8a54" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1f8a54" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <text x="30" y="40" font-size="15" font-weight="700" fill="#8891a3">THE MASK vs. THE MECHANISM</text>
+
+  <!-- dark zone = "in the dark", behind the mask -->
+  <rect x="432" y="66" width="416" height="286" rx="14" fill="#0f1630"/>
+  <text x="640" y="90" font-size="11.5" fill="#5b6a95" text-anchor="middle">inside the model — in the dark</text>
+
+  <!-- refusal mask / wall -->
+  <rect x="388" y="52" width="44" height="312" rx="8" fill="#3560c4" stroke="#24408f" stroke-width="1.5"/>
+  <line x1="388" y1="120" x2="432" y2="120" stroke="#6d86d6"/><line x1="388" y1="188" x2="432" y2="188" stroke="#6d86d6"/><line x1="388" y1="256" x2="432" y2="256" stroke="#6d86d6"/><line x1="388" y1="312" x2="432" y2="312" stroke="#6d86d6"/>
+  <text x="410" y="210" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" transform="rotate(-90 410 210)">REFUSAL MASK · actuator (output)</text>
+
+  <!-- frontal request bounces off -->
+  <line x1="46" y1="150" x2="384" y2="150" stroke="#8891a3" stroke-width="3" marker-end="url(#grey)"/>
+  <text x="50" y="138" font-size="12.5" fill="#4a5468">“how do I make X?”  (direct request)</text>
+  <path d="M384 150 C 330 132, 300 120, 268 108" stroke="#8891a3" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#grey)"/>
+  <text x="150" y="100" font-size="12.5" font-weight="700" fill="#3560c4">Refusal ✓  (looks safe)</text>
+
+  <!-- carrier glowing in the dark -->
+  <circle cx="618" cy="196" r="70" fill="url(#glow)"/>
+  <circle cx="618" cy="196" r="30" fill="#34c27a" stroke="#8ff0b8" stroke-width="1.5"/>
+  <text x="618" y="258" font-size="14" font-weight="700" fill="#7ef0ab" text-anchor="middle">CARRIER</text>
+  <text x="618" y="278" font-size="11.5" fill="#aeb9d6" text-anchor="middle">the concept — still computed</text>
+
+  <!-- jailbreak: around the barrier, to the carrier -->
+  <path d="M60 432 C 250 496, 470 486, 560 322 C 588 272, 602 240, 602 224" stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#red)"/>
+  <text x="70" y="418" font-size="12.5" font-weight="700" fill="#c0392b">jailbreak / adversarial —</text>
+  <text x="70" y="436" font-size="12.5" font-weight="700" fill="#c0392b">orthogonal, around the barrier</text>
+
+  <!-- caption -->
+  <rect x="30" y="456" width="820" height="34" rx="9" fill="#14183a"/>
+  <text x="440" y="478" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="middle">A refusal is a mask over the output. The carrier is still there — and a jailbreak just goes around it.</text>
+</svg>
